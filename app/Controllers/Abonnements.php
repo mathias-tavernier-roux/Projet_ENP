@@ -6,14 +6,35 @@ class Abonnements extends BaseController
 {
 	public function index()
 	{
-		return view('abonnements/index');
+		// définition des données variables du template
+		$data['title'] = 'Mes Abonnements';
+		 
+		// on charge la view qui contient le corps de la page
+		$data['contents'] = 'abonnements/index';
+	 
+		// on charge la page dans le template
+		$this->load->view('template', $data);
 	}
     public function add()
 	{
-		return view('abonnements/add');
+		// définition des données variables du template
+		$data['title'] = '';
+		 
+		// on charge la view qui contient le corps de la page
+		$data['contents'] = 'abonnements/add';
+	 
+		// on charge la page dans le template
+		$this->load->view('template', $data);
 	}
 	public function abort()
 	{
-		return view('abonnements/abort');
+		// définition des données variables du template
+		$data['title'] = '';
+		 
+		// on charge la view qui contient le corps de la page
+		$data['contents'] = 'abonnements/abort';
+	 
+		// on charge la page dans le template
+		$this->load->view('template', $data);
 	}
 }

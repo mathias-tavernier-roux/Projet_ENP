@@ -32,12 +32,16 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
+		// ---------------------------------------------
+		// Gestion des Informations de BDD
 		'hostname' => 'localhost',
-		'username' => '',
+		'username' => 'root',
 		'password' => '',
 		'database' => '',
+		'port'     => 3306,
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
+		// ---------------------------------------------
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
 		'charset'  => 'utf8',
@@ -47,7 +51,6 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
 	];
 
 	/**
