@@ -1,0 +1,16 @@
+CRITICAL - 2021-04-05 01:22:45 --> Invalid file: Application/System/CORE_UNLOCK_PROCEDURE.php
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Application/Sys...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Sys...', Array, true)
+#2 C:\laragon\www\EspaceASM\app\Controllers\System.php(18): view('Application/Sys...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\System->CORE_UNLOCK_PROCEDURE()
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\System))
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-05 01:30:10 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Router\Router.php(170): CodeIgniter\Router\Router->autoRoute('System/CORE_UNL...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('System/CORE_UNL...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(384): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

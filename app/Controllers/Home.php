@@ -10,6 +10,8 @@ class Home extends BaseController
 	}
 	public function connect()
 	{
+		session_start();
+		$_SESSION['titre'] = " - CORE/UNLOCK";
 		return view('connect');
 	}
 }
