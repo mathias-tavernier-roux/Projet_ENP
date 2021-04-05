@@ -18,6 +18,8 @@ class Users extends BaseController
 	}
 	public function list()
 	{
+		session_start();
+		$_SESSION['titre'] = "ENP - Liste des Utilisateurs";
 		return view('Application/Users/list');
 	}
 	public function add()

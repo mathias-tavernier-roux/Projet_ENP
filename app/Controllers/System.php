@@ -24,18 +24,18 @@ class System extends BaseController
 		return view('Application/System/CORE_UNLOCK_PROCEDURE');
 	}
     // Addons Scripts
-    public function addons_list()
+    public function appstore()
 	{
 		session_start();
-		$_SESSION['titre'] = "ENP - Addons";
-		return view('Application/System/addons_list');
+		$_SESSION['titre'] = "ENP - App Store";
+		return view('Application/System/appstore');
 	}
-	public function addon_view()
+	public function app_view()
 	{
 		session_start();
 		$addon_name = "blank_addon.zip";
 		$_SESSION['titre'] = "ENP - Addon Package : $addon_name";
-		return view('Application/System/addons_view');
+		return view('Application/System/appstore_view');
 	}
     public function addon_install()
 	{

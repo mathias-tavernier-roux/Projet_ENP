@@ -31,7 +31,7 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="/assets/img/avatars/0.png">Mathias Tavernier-Roux</td>
+                            <td><img class="rounded-circle me-2" width="30" height="30" src="<?php echo base_url('public/assets/img/avatars/0.png'); ?>">Mathias Tavernier-Roux</td>
                             <td>Studio</td>
                             <td>Jeune Majeur</td>
                             <td>29/06/2002</td>
