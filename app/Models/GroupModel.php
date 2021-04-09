@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class GroupModel extends Model
 {
     protected $DBGroup = 'default';
-    protected $table      = 'users';
+    protected $table      = 'group';
     protected $primaryKey = 'id';
 
     protected $useAutoIncrement = true;
@@ -15,7 +15,7 @@ class GroupModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['Group_Name','Description','Level'];
+    protected $allowedFields = ['name','pole','taille'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -25,4 +25,34 @@ class GroupModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+    public function create($group_name,$pole,$taille)
+    {
+        $data = [
+            'name' => $group_name,
+            'pole'    => $pole,
+            'taille'    => $taille,
+        ];
+        
+        $this->insert($data);
+    }
+    public function list()
+    {
+        return $this->findAll();
+    }
+    public function edit($group_name,$pole,$taille)
+    {
+        $data = [
+            'name' => $group_name,
+            'pole'    => $pole,
+            'taille'    => $taille,
+        ];
+        
+        $this->update($data);
+    }
+
+    public function remove($GID)
+    {
+        $this->delete($GID);
+    }
 }

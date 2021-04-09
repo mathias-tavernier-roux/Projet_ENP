@@ -1,0 +1,42 @@
+CRITICAL - 2021-04-07 06:06:10 --> Invalid file: Application/Users/disconnect.php
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Application/Use...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#2 C:\laragon\www\EspaceASM\app\Controllers\Users.php(19): view('Application/Use...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->disconnect()
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-07 07:02:23 --> Undefined variable: result
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 33, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): view('Application/Use...')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-07 08:39:44 --> Undefined variable: result
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 33, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): view('Application/Use...')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-07 08:41:33 --> Undefined variable: result
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(11): view('Application/Gro...')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

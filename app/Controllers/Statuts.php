@@ -6,6 +6,8 @@ class Statuts extends BaseController
 {
 	public function index()
 	{
+		session_start();
+		$_SESSION['titre'] = "ENP - CORE/UNLOCK";
 		return view('Application/Statuts/index');
 	}
 	public function add()

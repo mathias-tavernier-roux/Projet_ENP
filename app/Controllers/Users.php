@@ -6,6 +6,8 @@ class Users extends BaseController
 {
 	public function index()
 	{
+		session_start();
+		$_SESSION['titre'] = "ENP - CORE/UNLOCK";
 		return view('Application/Users/index');
 	}
 	public function connect()

@@ -29,24 +29,34 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><img class="rounded-circle me-2" width="30" height="30" src="<?php echo base_url('public/assets/img/avatars/0.png'); ?>">Mathias Tavernier-Roux</td>
-                            <td>Studio</td>
-                            <td>Jeune Majeur</td>
-                            <td>29/06/2002</td>
-                            <td><button class="btn btn-primary" type="button">Supprimer</button></td>
-                        </tr>
+                        <?php
+                        $result = NULL;
+                        if ($result != NULL) {
+                            foreach ($result as $article) {
+                                $id = $article['0'];
+                                $nom = $article['1'];
+                                $group = $article['2'];
+                                $statut = $article['3'];
+                                $date_naissance = $article['4'];
+                                $idp = $article['5'];
+                        ?>
+                                <tr>
+                                    <td><?= $id ?></td>
+                                    <td><img class="rounded-circle me-2" width="30" height="30" src="<?php echo base_url("public/assets/img/avatars/$idp.png"); ?>"><?= $nom ?></td>
+                                    <td><?= $group ?></td>
+                                    <td><?= $statut ?></td>
+                                    <td><?= $date_naissance ?></td>
+                                    <td><button class="btn btn-primary" type="button">Supprimer</button></td>
+                                </tr>
+                        <?php
+                            }
+                        }
+                        ?>
                     </tbody>
                     <tfoot>
                         <tr></tr>
                     </tfoot>
                 </table>
-            </div>
-            <div class="row">
-                <div class="col-md-6 align-self-center">
-                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Liste %STATUT% dans Le Groupe&nbsp;%GROUPE%<br></p>
-                </div>
             </div>
         </div>
     </div>

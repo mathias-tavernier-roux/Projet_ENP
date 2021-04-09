@@ -1,3 +1,4 @@
+<?php var_dump($_ENV)?>
 <?php $error_id = uniqid('error', true); ?>
 <!doctype html>
 <html>

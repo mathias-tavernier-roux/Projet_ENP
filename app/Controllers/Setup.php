@@ -10,10 +10,8 @@ class Setup extends BaseController
 		$_SESSION['titre'] = "ENP - Install Wizard";
 		return view('Application/Setup/index');
 	}
-	public function repair()
+	public function install()
 	{
-		session_start();
-		$_SESSION['titre'] = "ENP - Install Wizard";
-		return view('Application/Setup/repair');
+		
 	}
 }

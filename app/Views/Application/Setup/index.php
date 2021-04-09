@@ -24,9 +24,10 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Projet ENP<br>Assistant D'Installation<br></h4>
                                     </div>
-                                    <form class="user">
-                                        <div class="mb-3"></div>
-                                        <h5 style="text-align: center;">Configuration des Identifiants SQL</h5><input class="form-control form-control-user" type="text" id="admin_login" placeholder="Créez Un Identifiant Administrateur" name="login" required="" style="padding-bottom: 16px;margin-bottom: 10px;"><input class="form-control form-control-user" type="password" id="admin_password" placeholder="Créez Un Mot de Passe Administrateur.." name="password" required="">
+                                    <form class="user" method="POST" action="/public/Setup/Install">
+                                        <h5 style="text-align: center;">Création des Identifiants de Administrateur Systeme</h5>
+                                        <input class="form-control form-control-user" type="text" id="admin_login" placeholder="Créez Un Identifiant Administrateur" name="login" required style="padding-bottom: 16px;margin-bottom: 10px;">
+                                        <input class="form-control form-control-user" type="password" id="admin_password" placeholder="Créez Un Mot de Passe Administrateur" name="password" required></div>
                                         <hr>
                                         <h5 style="text-align: center;">Choix des Paquets A Installer Après L'Installation de L'Application Web</h5>
                                         <div>
@@ -34,8 +35,6 @@
                                             <p>Description de L'Application</p>
                                         </div>
                                         <hr>
-                                        <h5 style="text-align: center;">Création des Identifiants de Administrateur Systeme</h5><input class="form-control form-control-user" type="text" id="admin_login" placeholder="Créez Un Identifiant Administrateur" name="login" required="" style="padding-bottom: 16px;margin-bottom: 10px;">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="password" id="admin_password" placeholder="Créez Un Mot de Passe Administrateur.." name="password" required=""></div>
                                         <div class="form-check text-start"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="Confirmation CGU">J'Accepte Les Conditions Général d'Utilisation et Les Conditions Lié A La Licence De L'Application</label></div>
                                         <p style="margin-bottom: 0px;"><a href="cgu">Accéder au CGU (Conditions General d'Utilisation)</a></p>
                                         <p><a href="cga">Accéder au CLA (Conditions lié a la Licence de l'Application)</a></p><a class="btn btn-primary" role="button" style="width: 100%;">Lancer L'Installation</a>

@@ -41,7 +41,7 @@
                             <p class="text-primary m-0 fw-bold">Application Provenant de Sources Inconnus (Voir Manuel de L'Application : Sources Inconnus)</p>
                         </div>
                         <?php
-                        $core_status = 0;
+                        $core_status = 1;
                         if($core_status == 1)
                         {
                         ?>

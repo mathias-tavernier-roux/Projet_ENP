@@ -1,0 +1,133 @@
+CRITICAL - 2021-04-08 16:49:21 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:50:29 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:51:28 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:51:29 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:54:27 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:54:28 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:54:28 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 16:55:18 --> Undefined index: database.name.default
+#0 C:\laragon\www\EspaceASM\app\Config\Database.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 6, Array)
+#1 C:\laragon\www\EspaceASM\vendor\composer\ClassLoader.php(444): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Config\\Database')
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\Database.php(71): spl_autoload_call('Config\\Database')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Debug\Toolbar.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\Services.php(779): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', NULL)
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::toolbar()
+#10 C:\laragon\www\EspaceASM\app\Config\Events.php(52): CodeIgniter\Config\BaseService::__callStatic('toolbar', Array)
+#11 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#12 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#13 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(313): CodeIgniter\Events\Events::trigger('pre_system')
+#14 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-04-08 16:56:09 --> Undefined index: database.name.addon
+#0 C:\laragon\www\EspaceASM\app\Config\Database.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 7, Array)
+#1 C:\laragon\www\EspaceASM\vendor\composer\ClassLoader.php(444): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\laragon\\www\\...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Config\\Database')
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\Database.php(71): spl_autoload_call('Config\\Database')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Debug\Toolbar.php(69): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\Services.php(779): CodeIgniter\Debug\Toolbar->__construct(Object(Config\Toolbar))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\BaseService.php(100): CodeIgniter\Config\Services::toolbar(Object(Config\Toolbar), false)
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\Services.php(774): CodeIgniter\Config\BaseService::getSharedInstance('toolbar', NULL)
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Config\BaseService.php(171): CodeIgniter\Config\Services::toolbar()
+#10 C:\laragon\www\EspaceASM\app\Config\Events.php(52): CodeIgniter\Config\BaseService::__callStatic('toolbar', Array)
+#11 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#12 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Events\Events.php(166): call_user_func(Object(Closure))
+#13 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(313): CodeIgniter\Events\Events::trigger('pre_system')
+#14 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-04-08 16:57:14 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-04-08 16:58:03 --> Error connecting to the database: Uninitialized string offset: 0
+ERROR - 2021-04-08 17:02:07 --> Error connecting to the database: Uninitialized string offset: 0
+CRITICAL - 2021-04-08 17:07:02 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:11:02 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:13:29 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:13:30 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:14:06 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:14:35 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:14:52 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:14:53 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:17:16 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:25:15 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-08 17:50:24 --> Undefined variable: default
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 1, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): view('Application/Use...')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-08 17:51:28 --> Error connecting to the database: Uninitialized string offset: 0
+ERROR - 2021-04-08 17:53:50 --> Error connecting to the database: Uninitialized string offset: 0
+ERROR - 2021-04-08 17:55:50 --> Error connecting to the database: Uninitialized string offset: 0
+ERROR - 2021-04-08 17:57:52 --> Error connecting to the database: Unknown database 'enp-core'
+CRITICAL - 2021-04-08 19:30:24 --> Undefined property: App\Controllers\Groups::$GroupModel
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 21, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-08 19:33:41 --> Undefined property: App\Controllers\Groups::$GroupModel
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-08 19:37:13 --> Undefined variable: group
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-08 19:37:33 --> Call to undefined method App\Models\GroupModel::add
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(22): CodeIgniter\Model->__call('add', Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

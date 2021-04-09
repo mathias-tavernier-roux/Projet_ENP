@@ -18,12 +18,24 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+                $result = NULL;
+                    if ($result != NULL) {
+                        foreach ($result as $article) {
+                            $id = $article['0'];
+                            $nom = $article['1'];
+                            $h_id = $article['2'];
+                    ?>
                     <tr>
-                        <td>1</td>
-                        <td>Direction</td>
-                        <td>1</td>
+                        <td><?=$id?></td>
+                        <td><?=$nom?></td>
+                        <td><?=$h_id?></td>
                         <td><button class="btn btn-primary" type="button">Supprimer</button></td>
                     </tr>
+                    <?php
+                        }
+                    }
+                    ?>
                 </tbody>
                 <tfoot>
                     <tr></tr>

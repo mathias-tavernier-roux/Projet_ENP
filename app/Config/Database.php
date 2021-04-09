@@ -34,8 +34,8 @@ class Database extends Config
 		'DSN'      => '',
 		// ---------------------------------------------
 		// Gestion des Informations de BDD
-		'hostname' => 'localhost',
-		'username' => 'root',
+		'hostname' => '',
+		'username' => '',
 		'password' => '',
 		'database' => '',
 		'port'     => 3306,
