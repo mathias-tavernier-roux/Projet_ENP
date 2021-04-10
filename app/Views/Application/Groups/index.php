@@ -11,7 +11,6 @@
                 <table class="table my-0" id="dataTable">
                     <thead>
                         <tr>
-                            <th>G-ID</th>
                             <th>Nom Du Groupe</th>
                             <th>Pole</th>
                             <th>Taille</th>
@@ -21,17 +20,16 @@
                     <?php
                     if ($list != NULL) {
                         foreach ($list as $article) {
-                            $id = $article['0'];
-                            $nom = $article['1'];
-                            $pole = $article['2'];
-                            $taille = $article['3'];
+                            $id = $article['id'];
+                            $nom = $article['name'];
+                            $pole = $article['pole'];
+                            $taille = $article['taille'];
                     ?>
                             <tr>
-                                <td><?= $id ?></td>
                                 <td><?= $nom ?></td>
                                 <td><?= $pole ?></td>
                                 <td><?= $taille ?></td>
-                                <td><button class="btn btn-primary" type="button">Supprimer</button></td>
+                                <td><form method=POST action=/public/Groups/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                             </tr>
                     <?php
                         }

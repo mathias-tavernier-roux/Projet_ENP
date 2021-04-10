@@ -19,7 +19,7 @@
                     <div class="sidebar-brand-text mx-3"><span>ASM - ENP</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <a style="color:white;">Modules Systeme</a>
+                <a style="color:white;">Panneau de Configuration</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="/public/System/appstore"><span><strong>Appstore</strong></span></a></li>
                     <li class="nav-item"><a class="nav-link active" href="/public/System/"></i><span><strong>Informations Systeme</strong></span></a></li>
@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link active" href="/public/Statuts/"><span><strong>Roles/Statut</strong></span></a></li>
                     <li class="nav-item"><a class="nav-link active" href="/public/Users/list"><span><strong>Utilisateurs</strong></span></a></li>
                 </ul>
-                <a style="color:white;">Addons</a>
+                <a style="color:white;">Application</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active"></i><span><strong>Aucun Addon Installé</strong></span></a></li>
                 </ul>
@@ -42,9 +42,9 @@
                             <li class="nav-item dropdown no-arrow">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">%Nom de L'Utilisateur%</span><img class="border rounded-circle img-profile" src="<?php echo base_url('public/assets/img/avatars/0.png'); ?>"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
-                                    <a class="dropdown-item" href="/public/Users/"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
+                                    <a class="dropdown-item" href="/public/Users/"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Gerer Mon Profil</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/public/Users/disconnect"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                        <a class="dropdown-item" href="/public/Users/disconnect"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Deconnection</a>
                                     </div>
                                 </div>
                             </li>

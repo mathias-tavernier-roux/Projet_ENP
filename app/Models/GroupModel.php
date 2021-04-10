@@ -13,9 +13,9 @@ class GroupModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['name','pole','taille'];
+    protected $allowedFields = ['id','name','pole','taille'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -40,19 +40,9 @@ class GroupModel extends Model
     {
         return $this->findAll();
     }
-    public function edit($group_name,$pole,$taille)
-    {
-        $data = [
-            'name' => $group_name,
-            'pole'    => $pole,
-            'taille'    => $taille,
-        ];
-        
-        $this->update($data);
-    }
 
     public function remove($GID)
     {
-        $this->delete($GID);
+        return $this->delete($GID);
     }
 }

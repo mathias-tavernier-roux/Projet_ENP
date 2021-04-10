@@ -2,33 +2,27 @@
 
 namespace App\Controllers;
 
-use App\Models\GroupModel;
-
 class Groups extends BaseController
 {
-	public function ___construct()
+	public function __construct()
 	{
-		$this->load->model('GroupModel');
+		$this->Group = model('App\Models\GroupModel', false);
 	}
 	public function index()
 	{
 		session_start();
 		$_SESSION['titre'] = "ENP - Groupes";
-		$group = new GroupModel();
-		$list = $group->list();
-		return view('Application/Groups/index',$list);
+		$list = $this->Group->list();
+		return view('Application/Groups/index', ['list'=>$list]);
 	}
 	public function add()
 	{
-		$group = new GroupModel();
-		$group->create($_REQUEST['name'],$_REQUEST['pole'],$_REQUEST['taille']);
-	}
-	public function edit()
-	{
-		
+		$this->Group->create($_REQUEST['name'],$_REQUEST['pole'],$_REQUEST['taille']);
+		return $this->index();
 	}
 	public function remove()
 	{
-		
+		$this->Group->remove($_REQUEST['id']);
+		return $this->index();
 	}
 }

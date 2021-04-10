@@ -11,26 +11,23 @@
             <table class="table my-0" id="dataTable">
                 <thead>
                     <tr>
-                        <th>R-ID</th>
                         <th>Nom Du Statut / Role</th>
-                        <th>Hierarchie</th>
+                        <th>Description</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php
-                $result = NULL;
-                    if ($result != NULL) {
-                        foreach ($result as $article) {
-                            $id = $article['0'];
-                            $nom = $article['1'];
-                            $h_id = $article['2'];
+                    if ($list != NULL) {
+                        foreach ($list as $article) {
+                            $id = $article['id'];
+                            $nom = $article['name'];
+                            $description = $article['description'];
                     ?>
                     <tr>
-                        <td><?=$id?></td>
                         <td><?=$nom?></td>
-                        <td><?=$h_id?></td>
-                        <td><button class="btn btn-primary" type="button">Supprimer</button></td>
+                        <td><?=$description?></td>
+                        <td><form method=POST action=/public/Statuts/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                     </tr>
                     <?php
                         }
@@ -50,25 +47,26 @@
     </div>
     <div class="card-body">
         <h5></h5>
-        <form>
+        <form method="POST" action="/public/Statuts/add">
             <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
                 <table class="table my-0" id="dataTable">
                     <thead>
                         <tr>
                             <th>Nom du Role</th>
-                            <th>Role</th>
+                            <th>Description</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input class="form-control" type="text" style="width: 150px;"></td>
-                            <td><input class="form-control" type="number" style="width: 100px;">
+                            <td><input class="form-control" type="text" id="name" name="name" style="width: 150px;"></td>
+                            <td><input class="form-control" type="text" id="description" name="description" style="width: 100px;">
                             </td>
-                            <td><button class="btn btn-primary" type="button">Créer Un Role</button>
-                            </td>
-                        </tr>
+                            <td><button class="btn btn-primary" type="submit">Créer Un Role</button></td>
+                            </tr>
+                        </form>
                     </tbody>
+                    
                     <tfoot>
                         <tr></tr>
                     </tfoot>

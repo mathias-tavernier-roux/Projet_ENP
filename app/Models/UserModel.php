@@ -13,9 +13,9 @@ class UserModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['first_name','last_name','birth','login','password','group', 'role'];
+    protected $allowedFields = ['first_name','last_name','birth','login','password','group_id', 'role_id','group_name', 'role_name'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -26,41 +26,39 @@ class UserModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function create($first_name,$last_name,$birth,$login,$password,$group_id,$role_id)
+    public function create($first_name,$last_name,$group_id,$role_id,$group_name,$role_name,$birth,$login,$password)
     {
         $data = [
             'first_name' => $first_name,
             'last_name' => $last_name,
             'birth'    => $birth,
             'login'    => $login,
-            'password'    => $password,
-            'group_id'    => $group_id,
-            'role_id'    => $role_id,
+            'password' => $password,
+            'group_id' => $group_id,
+            'role_id'  => $role_id,
+            'group_name' => $group_name,
+            'role_name'  => $role_name,
         ];
-        
         $this->insert($data);
     }
     public function list()
     {
-        $this->findall();
+        return $this->findall();
     }
-    public function edit($first_name,$last_name,$birth,$login,$password,$group_id,$role_id)
+    public function edit($id,$group_id,$role_id,$group_name,$role_name)
     {
         $data = [
-            'first_name' => $first_name,
-            'last_name' => $last_name,
-            'birth'    => $birth,
-            'login'    => $login,
-            'password'    => $password,
-            'group_id'    => $group_id,
-            'role_id'    => $role_id,
+            'group_id' => $group_id,
+            'role_id' => $role_id,
+            'group_name' => $group_name,
+            'role_name' => $role_name,
         ];
         
-        $this->update($data);
+        return $this->update($id, $data);
     }
 
-    public function remove($GID)
+    public function remove($UID)
     {
-        $this->delete($GID);
+        return $this->delete($UID);
     }
 }

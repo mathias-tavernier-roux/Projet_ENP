@@ -26,7 +26,7 @@
                                     <div class="mb-3"><label class="form-label" for="username"><strong>Nouveau Login</strong></label><input class="form-control" type="text" id="new_login" placeholder="user" name="new_login"></div>
                                 </div>
                                 <div class="col">
-                                    <div class="mb-3"><label class="form-label" for="email"><strong>Votre&nbsp;Identifiant Actuel</strong></label><input class="form-control" type="email" id="old_login" placeholder="user@ASM.ENP" name="old_login" required=""></div>
+                                    <div class="mb-3"><label class="form-label" for="email"><strong>Votre&nbsp;Identifiant Actuel</strong></label><input class="form-control" type="email" id="old_login" placeholder="user" name="old_login" required=""></div>
                                 </div>
                             </div>
                             <div class="row">
