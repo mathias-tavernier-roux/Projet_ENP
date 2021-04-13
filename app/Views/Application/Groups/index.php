@@ -29,7 +29,7 @@
                                 <td><?= $nom ?></td>
                                 <td><?= $pole ?></td>
                                 <td><?= $taille ?></td>
-                                <td><form method=POST action=/public/Groups/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
+                                <td><form method=POST action=/Groups/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                             </tr>
                     <?php
                         }
@@ -48,7 +48,7 @@
         </div>
         <div class="card-body">
             <h5></h5>
-            <form method="POST" action="/public/Groups/add">
+            <form method="POST" action="/Groups/add">
                 <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
                     <table class="table my-0" id="dataTable">
                         <thead>

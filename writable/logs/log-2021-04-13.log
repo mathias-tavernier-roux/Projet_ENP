@@ -1,0 +1,12 @@
+CRITICAL - 2021-04-13 02:54:55 --> Undefined variable: titre
+#0 C:\laragon\www\EspaceASM\app\Views\templates\default.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 6, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(236): CodeIgniter\View\View->render('templates/defau...', Array, true)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(17): view('Application/Use...')
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->index()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}

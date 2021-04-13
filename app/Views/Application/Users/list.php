@@ -38,7 +38,7 @@
                                     <td><?= $statut ?></td>
                                     <td><?= $date_naissance ?></td>
                                     <td>
-                                        <form method=POST action=/public/Users/edit>
+                                        <form method=POST action=/Users/edit>
                                         <input type="hidden" id="id" name="id" value="<?= $uid ?>">
                                             <select name="group_id" id="group_id" class="form-select" style="margin-bottom:10px">
                                                 <?php
@@ -70,7 +70,7 @@
                                     <td>
                                         <button class="btn btn-primary" style="margin-bottom:10px"type="submit">Modifier</button>
                                         </form>
-                                        <form method=POST action=/public/Users/delete><input type="hidden" id="id" name="id" value="<?= $uid ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form>
+                                        <form method=POST action=/Users/delete><input type="hidden" id="id" name="id" value="<?= $uid ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form>
                                     </td>
                                 </tr>
                         <?php
@@ -91,7 +91,7 @@
         </div>
         <div class="card-body">
             <h5></h5>
-            <form method="POST" action="/public/Users/add">
+            <form method="POST" action="/Users/add">
                 <label class="form-label">Nom</label><input name="first_name" id="first_name" class="form-control" type="text">
                 <label class="form-label">Prenom</label><input name="last_name" id="last_name" class="form-control" type="text">
                 <label class="form-label">Date de Naissance</label><input name="birth" id="birth" class="form-control" type="text">

@@ -7,8 +7,8 @@ class Setup extends BaseController
 	public function index()
 	{
 		session_start();
-		$_SESSION['titre'] = "ENP - Install Wizard";
-		return view('Application/Setup/index');
+		$titre = "Programme d'Installation";
+		return view('Application/Setup/index', ['titre'=>$titre]);
 	}
 	public function install()
 	{

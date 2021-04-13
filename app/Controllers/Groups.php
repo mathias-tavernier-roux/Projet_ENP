@@ -10,10 +10,9 @@ class Groups extends BaseController
 	}
 	public function index()
 	{
-		session_start();
-		$_SESSION['titre'] = "ENP - Groupes";
+		$titre = "Groupes";
 		$list = $this->Group->list();
-		return view('Application/Groups/index', ['list'=>$list]);
+		return view('Application/Groups/index', ['list'=>$list,'titre'=>$titre]);
 	}
 	public function add()
 	{

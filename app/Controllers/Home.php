@@ -10,8 +10,7 @@ class Home extends BaseController
 	}
 	public function connect()
 	{
-		session_start();
-		$_SESSION['titre'] = "ENP - Connect";
-		return view('connect');
+		$titre = "Authentification";
+		return view('connect' , ['titre'=>$titre]);
 	}
 }

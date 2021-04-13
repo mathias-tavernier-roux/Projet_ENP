@@ -10,10 +10,9 @@ class Statuts extends BaseController
 	}
 	public function index()
 	{
-		session_start();
-		$_SESSION['titre'] = "ENP - Roles/Statut";
+		$titre = "Roles/Statut";
 		$list = $this->Role->list();
-		return view('Application/Statuts/index', ['list'=>$list]);
+		return view('Application/Statuts/index', ['list'=>$list,'titre'=>$titre]);
 	}
 	public function add()
 	{

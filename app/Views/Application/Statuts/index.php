@@ -27,7 +27,7 @@
                     <tr>
                         <td><?=$nom?></td>
                         <td><?=$description?></td>
-                        <td><form method=POST action=/public/Statuts/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
+                        <td><form method=POST action=/Statuts/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                     </tr>
                     <?php
                         }
@@ -47,7 +47,7 @@
     </div>
     <div class="card-body">
         <h5></h5>
-        <form method="POST" action="/public/Statuts/add">
+        <form method="POST" action="/Statuts/add">
             <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
                 <table class="table my-0" id="dataTable">
                     <thead>

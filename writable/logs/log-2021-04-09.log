@@ -328,3 +328,829 @@ CRITICAL - 2021-04-09 08:17:51 --> Argument 2 passed to view() must be of the ty
 #3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2021-04-09 08:57:31 --> Undefined property: App\Controllers\Groups::$GroupModel
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 08:59:27 --> Undefined property: App\Controllers\Groups::$groupmodel
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:00:33 --> Undefined property: App\Controllers\Groups::$group_model
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:00:36 --> Undefined property: App\Controllers\Groups::$group_model
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:00:37 --> Undefined property: App\Controllers\Groups::$group_model
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:00:38 --> Undefined property: App\Controllers\Groups::$group_model
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:01:30 --> Undefined property: App\Controllers\Groups::$load
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 9, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\Groups->__construct()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:03:21 --> Undefined property: App\Controllers\Groups::$load
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 13, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-04-09 09:09:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:09:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:09:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:09:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:11:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:11:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:21:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 'id'' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 'id')
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find('id', 2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:21:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 'id'' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 'id')
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find('id', 2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:22:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:22:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:27:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:27:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:27:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:27:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:31:32 --> Argument 2 passed to view() must be of the type array, null given, called in C:\laragon\www\EspaceASM\app\Controllers\Groups.php on line 16
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(16): view('Application/Gro...', NULL)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 09:32:04 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(16): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-09 09:33:36 --> mysqli_sql_exception: Unknown column 'group.deleted_at' in 'where clause' in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(36): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:33:36 --> Unknown column 'group.deleted_at' in 'where clause'
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(36): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:34:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:34:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL
+AND `group`.`id` = 2' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(169): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(true, 2)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->find(2)
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:40:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:40:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:40:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:40:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:40:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:40:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:41:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:41:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-04-09 09:54:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:54:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:55:17 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(16): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:56:21 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:57:14 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:57:16 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:57:17 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:57:17 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:57:59 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 09:58:00 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-04-09 09:58:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:58:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(715): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\EspaceASM\app\Models\GroupModel.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(15): App\Models\GroupModel->list()
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#9 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#10 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-09 09:59:02 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 10:01:34 --> Undefined variable: list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 22, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 10:03:00 --> Undefined offset: 0
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\laragon\\www\\...', 24, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(17): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 10:06:19 --> Undefined property: App\Controllers\Groups::$GroupModel
+#0 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 21, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 10:25:18 --> Undefined variable: id
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Groups\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 32, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Gro...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(16): view('Application/Gro...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Groups.php(21): App\Controllers\Groups->index()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Groups->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Groups))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 11:30:04 --> Undefined property: App\Controllers\Users::$User
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 25, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 11:30:59 --> Undefined property: App\Controllers\Users::$User
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 25, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 11:31:15 --> Undefined property: App\Controllers\Statuts::$Role
+#0 C:\laragon\www\EspaceASM\app\Controllers\Statuts.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 11, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Statuts->index()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statuts))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 11:31:25 --> Undefined property: App\Controllers\Users::$User
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 25, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 11:33:49 --> Undefined property: App\Controllers\Users::$User
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 25, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 20:33:48 --> Undefined variable: group_list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 2, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array, Array, Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 20:37:09 --> Undefined variable: role_list
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 3, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 20:47:33 --> Undefined index: first_name
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 20:51:57 --> Undefined index: group_id
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 20:53:40 --> Undefined index: name
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 37, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(39): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 20:55:04 --> Undefined index: statut_id
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 40, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(39): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 20:55:34 --> Undefined index: idp
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 42, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(39): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 20:58:16 --> Undefined variable: first_name
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 46, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(39): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 21:56:06 --> Invalid file: Application/Users/delete.php
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Application/Use...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#2 C:\laragon\www\EspaceASM\app\Controllers\Users.php(51): view('Application/Use...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->delete()
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-04-09 22:03:54 --> Undefined offset: 15
+#0 C:\laragon\www\EspaceASM\app\Views\Application\Users\list.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(220): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(34): view('Application/Use...', Array)
+#5 C:\laragon\www\EspaceASM\app\Controllers\Users.php(39): App\Controllers\Users->list()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->add()
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-04-09 23:11:02 --> There is no data to update.
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(1682): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\BaseModel.php(864): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Model.php(737): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\laragon\www\EspaceASM\app\Models\UserModel.php(55): CodeIgniter\Model->update(Array)
+#4 C:\laragon\www\EspaceASM\app\Controllers\Users.php(47): App\Models\UserModel->edit('16', '7')
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->edit()
+#6 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-09 23:13:52 --> Undefined index: id
+#0 C:\laragon\www\EspaceASM\app\Controllers\Users.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 47, Array)
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->edit()
+#2 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-09 23:46:00 --> Invalid file: Application/Users/index.php
+#0 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Application/Use...')
+#1 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('Application/Use...', Array, true)
+#2 C:\laragon\www\EspaceASM\app\Controllers\Users.php(17): view('Application/Use...')
+#3 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(935): App\Controllers\Users->index()
+#4 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\laragon\www\EspaceASM\vendor\codeigniter4\framework\system\CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\EspaceASM\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

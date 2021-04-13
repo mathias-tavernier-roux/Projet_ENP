@@ -13,8 +13,8 @@ class Users extends BaseController
 	public function index()
 	{
 		session_start();
-		$_SESSION['titre'] = "ENP - CORE/UNLOCK";
-		return view('Application/Users/index');
+		$titre = "Mon Compte";
+		return view('Application/Users/index', ['titre'=>$titre]);
 	}
 	public function connect()
 	{
@@ -27,11 +27,11 @@ class Users extends BaseController
 	public function list()
 	{
 		session_start();
-		$_SESSION['titre'] = "ENP - Utilisateurs";
+		$titre = "Liste des Utilisateurs";
 		$user_list = $this->User->list();
 		$group_list = $this->Group->list();
 		$role_list = $this->Role->list();
-		return view('Application/Users/list', ['user_list'=>$user_list,'group_list'=>$group_list,'role_list'=>$role_list]);
+		return view('Application/Users/list', ['user_list'=>$user_list,'group_list'=>$group_list,'role_list'=>$role_list,'titre'=>$titre]);
 	}
 	public function add()
 	{
@@ -53,7 +53,8 @@ class Users extends BaseController
 	}
 	public function reset()
 	{
-		return view('Application/Users/reset');
+		$titre = "Mot de Passe Perdu";
+		return view('Application/Users/reset', ['titre'=>$titre]);
 	}
 	public function delete()
 	{

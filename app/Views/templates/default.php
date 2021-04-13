@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title><?=$_SESSION['titre']?></title>
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/bootstrap/css/bootstrap.min.css'); ?>">
+    <title>ENP - <?=$titre?></title>
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/fontawesome-all.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/font-awesome.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/fontawesome5-overrides.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontawesome-all.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/font-awesome.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontawesome5-overrides.min.css'); ?>">
 </head>
 
 <body id="page-top">
@@ -21,11 +21,11 @@
                 <hr class="sidebar-divider my-0">
                 <a style="color:white;">Panneau de Configuration</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="/public/System/appstore"><span><strong>Appstore</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/public/System/"></i><span><strong>Informations Systeme</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/public/Groups/"><span><strong>Groupes</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/public/Statuts/"><span><strong>Roles/Statut</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/public/Users/list"><span><strong>Utilisateurs</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/System/appstore"><span><strong>Appstore</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/System/"></i><span><strong>Informations Systeme</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Groups/"><span><strong>Groupes</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Statuts/"><span><strong>Roles/Statut</strong></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Users/list"><span><strong>Utilisateurs</strong></span></a></li>
                 </ul>
                 <a style="color:white;">Application</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
@@ -40,11 +40,11 @@
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">%Nom de L'Utilisateur%</span><img class="border rounded-circle img-profile" src="<?php echo base_url('public/assets/img/avatars/0.png'); ?>"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">%Nom de L'Utilisateur%</span><img class="border rounded-circle img-profile" src="<?php echo base_url('assets/img/avatars/0.png'); ?>"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
-                                    <a class="dropdown-item" href="/public/Users/"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Gerer Mon Profil</a>
+                                    <a class="dropdown-item" href="/Users/"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Gerer Mon Profil</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="/public/Users/disconnect"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Deconnection</a>
+                                        <a class="dropdown-item" href="/Users/disconnect"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Deconnection</a>
                                     </div>
                                 </div>
                             </li>
@@ -68,8 +68,8 @@
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
-    <script src="<?php echo base_url('public/assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
-    <script src="<?php echo base_url('public/assets/js/theme.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/theme.js'); ?>"></script>
 </body>
 
 </html>
