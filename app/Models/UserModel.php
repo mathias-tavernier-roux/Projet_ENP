@@ -26,6 +26,11 @@ class UserModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function info($id)
+    {
+        return $this->where('id', $id)->first();
+    }
+
     public function create($first_name,$last_name,$group_id,$role_id,$group_name,$role_name,$birth,$login,$password)
     {
         $data = [
@@ -57,8 +62,21 @@ class UserModel extends Model
         return $this->update($id, $data);
     }
 
+    public function edit_auth($id, $password)
+    {
+        $data = [
+            'password' => $password,
+        ];
+        return $this->update($id, $data);
+    }
+
     public function remove($UID)
     {
         return $this->delete($UID);
+    }
+
+    public function connect($login)
+    {
+        return $this->where('login', $login)->first();
     }
 }

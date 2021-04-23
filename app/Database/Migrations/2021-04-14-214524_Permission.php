@@ -4,8 +4,9 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Group extends Migration
+class Permission extends Migration
 {
+	protected $DBGroup = 'system';
 	public function up()
 	{
 		// Create The Table : Installation
@@ -19,41 +20,50 @@ class Group extends Migration
 				'type'       => 'VARCHAR',
 				'constraint' => '100',
 			],
-			'pole'       => [
+			'app'       => [
 				'type'       => 'VARCHAR',
 				'constraint' => '100',
 			],
-			'taille'       => [
+			'page'       => [
 				'type'       => 'VARCHAR',
 				'constraint' => '100',
 			],
-			'link_name'       => [
+			'variant'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+			'group'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+			'role'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+			'type'       => [
 				'type'       => 'VARCHAR',
 				'constraint' => '100',
 			],
 	]);
 	$this->forge->addKey('id', true);
-	$this->forge->createTable('group');
+	$this->forge->createTable('permission');
 	$db = \Config\Database::connect('default');
 	$builder = $db->table('permission');
 	$data = [
-		'name' => 'List Groups',
-		'app'  => 'Groups',
-		'page'  => 'index',
+		'name' => 'Gestion des Permission',
+		'app'  => 'System',
+		'page'  => 'permissions',
 		'variant' => '',
 		'group'  => 'SYSTEM',
 		'role'  => 'ADMIN',
-		'type'  => 'SYSTEM',
+		'type'  => 'ROOT',
 	];
 	$builder->insert($data);
 	}
 
 	public function down()
 	{
-		// Erase The Table : WARNING, THIS ALSO ERASE DATA | Uninstallation
-		$this->forge->dropTable('group');
-		$db = \Config\Database::connect('default');
-		$builder = $db->table('permission');
-		$builder->delete(['app' => "Groups"]);
+		//
+		$this->forge->dropTable('permission');
 	}
 }

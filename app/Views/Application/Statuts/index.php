@@ -20,6 +20,8 @@
                 <?php
                     if ($list != NULL) {
                         foreach ($list as $article) {
+                            if ($article['id'] != 1)
+                            {
                             $id = $article['id'];
                             $nom = $article['name'];
                             $description = $article['description'];
@@ -30,7 +32,7 @@
                         <td><form method=POST action=/Statuts/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                     </tr>
                     <?php
-                        }
+                        }}
                     }
                     ?>
                 </tbody>

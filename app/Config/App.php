@@ -36,7 +36,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $indexPage = 'index.php';
+	public $indexPage = '';
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -174,7 +174,7 @@ class App extends BaseConfig
 	 *
 	 * @var integer
 	 */
-	public $sessionExpiration = 7200;
+	public $sessionExpiration = 0;
 
 	/**
 	 * --------------------------------------------------------------------------

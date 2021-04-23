@@ -10,17 +10,20 @@
                         <p class="text-primary m-0 fw-bold">Changer Des Informations Système</p>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form method="POST" action="/System/update_name">
                             <div class="row">
                                 <div class="col">
-                                    <div class="mb-3"><label class="form-label" for="username"><strong>Changer Le
-                                                Nom</strong><br></label><input class="form-control" type="text" id="new_name" placeholder="Nom de L'Entreprise" name="new_name"></div>
+                                    <div class="mb-3">
+                                    <label class="form-label" for="new_namef"><strong>Changer Le Nom</strong><br></label>
+                                    <input class="form-control" type="text" id="new_name" placeholder="Nom de L'Entreprise" name="new_name"></div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <div class="mb-3"><label class="form-label" for="first_name"><strong>Changer
-                                                L'Abrégé</strong><br></label><input class="form-control" type="password" id="new_mini_name" placeholder="Nom de L'Entreprise (En Abrégé)" name="new_mini_name"></div>
+                                    <div class="mb-3">
+                                    <label class="form-label" for="new_mini_name"><strong>Changer L'Abrégé</strong><br></label>
+                                    <input class="form-control" type="text" id="new_mini_name" placeholder="Nom de L'Entreprise (En Abrégé)" name="new_mini_name">
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Mettre a Jour Mes Identifiants</button></div>
@@ -34,16 +37,21 @@
                 <h6 class="text-primary fw-bold m-0">Mes Informations Systeme Actuel</h6>
             </div>
             <div class="card-body">
-                <h4 class="small fw-bold">Version Systeme ENP :<span class="float-end">B-1.0</span>
-                </h4>
-                <h4 class="small fw-bold">Version Framework (Code Igniter) :<span class="float-end">4.1.1</span></h4>
-                <h4 class="small fw-bold">Nom :<span class="float-end">Association Saint
-                        Michel</span></h4>
-                <h4 class="small fw-bold">Nom Abrégé<span class="float-end">ASM</span></h4>
-                <h4 class="small fw-bold">Etat du Coeur<span class="float-end">Verrouillé /&nbsp;
-                        Déverouillé</span></h4>
-                <h4 class="small fw-bold">Informations Serveurs PHP</h4><button class="btn btn-primary btn-sm" type="submit">Accéder aux Informations
-                    PHP</button>
+                <h4 class="small fw-bold">Version Systeme ENP :<span class="float-end"><?= $info["version_systeme"] ?></span></h4>
+                <h4 class="small fw-bold">Version Framework (Code Igniter) :<span class="float-end"><?= $info["version_framework"] ?></span></h4>
+                <h4 class="small fw-bold">Nom :<span class="float-end"><?= $info["complete_name"] ?></span></h4>
+                <h4 class="small fw-bold">Nom Abrégé<span class="float-end"><?= $info["little_name"] ?></span></h4>
+                <?php
+                if ($info["unlock"] == true) {
+                ?>
+                    <h4 class="small fw-bold">Etat du Coeur<span class="float-end">Déverrouillé</span></h4>
+                <?php
+                } else {
+                ?>
+                    <h4 class="small fw-bold">Etat du Coeur<span class="float-end">Verrouillé</span></h4>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </div>

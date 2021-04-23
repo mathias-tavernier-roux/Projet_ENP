@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title><?= $titre?></title>
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/bootstrap/css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/fontawesome-all.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/font-awesome.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('public/assets/fonts/fontawesome5-overrides.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontawesome-all.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/font-awesome.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontawesome5-overrides.min.css'); ?>">
 </head>
 
 <body class="bg-gradient-primary" style="background: rgb(37,37,37);">
@@ -28,8 +28,8 @@
                                         <p class="text-start mb-4">Cette Procédure Permettra au Cœur de Cette Application <br>- <strong>D'Installer et D'Exécuter</strong> un <strong>Addon</strong> provenant de <strong>sources non vérifiés</strong> <br><strong>(Ne Provenant Pas De L'Appstore Officiel)</strong><br><br>Prenez En Considération que Cette Opération Est <strong>UNIQUEMENT</strong> Recommandé <br>- <strong>Aux Administrateurs Système</strong> <strong>Souhaitant Développer Leurs Propres Addons </strong><br>Pour <strong>Contribuer a l'Amélioration&nbsp;de L'Application</strong><br>&nbsp;<br>- <strong>Aux Administrateurs Système</strong> <strong>Ayant Une</strong> <strong>Connaissance Suffisante En Développement Web</strong> <br>Pour <strong>Décortiquer Le Code Source d'un Addon (Pour En Comprendre Les Actions)</strong><br><br>- <strong>Aux</strong> <strong>Administrateurs Système D'Un</strong> <strong>Serveur De Test (Application Sacrifiable)</strong> <br>Dans le But de <strong>Tester L'Action des Addons Téléchargé Depuis Internet</strong><br><br></p>
                                     </div>
                                     <hr>
-                                    <form>
-                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">En Cochant Cette Case <strong>J'Accepte Les Conditions Suivantes :</strong></label></div>
+                                    <form method="POST" action="/System/CORE_UNLOCK_EXECUTE">
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required><label class="form-check-label" for="formCheck-1">En Cochant Cette Case <strong>J'Accepte Les Conditions Suivantes :</strong></label></div>
                                     </form>
                                     <form class="user">
                                         <div class="mb-3"></div>
@@ -47,8 +47,8 @@
             </div>
         </div>
     </div>
-    <script src="<?php echo base_url('public/assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
-    <script src="<?php echo base_url('public/assets/js/theme.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/js/theme.js'); ?>"></script>
 </body>
 
 </html>

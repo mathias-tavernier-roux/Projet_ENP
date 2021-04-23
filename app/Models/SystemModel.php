@@ -13,9 +13,9 @@ class SystemModel extends Model
     protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Complete_Name','Little_Name','Version','UNLOCK','ADMIN_LOGIN','ADMIN_PASSWORD'];
+    protected $allowedFields = ['id','complete_name','little_name','version_systeme','version_framework','unlock',];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -25,4 +25,33 @@ class SystemModel extends Model
     protected $validationRules    = [];
     protected $validationMessages = [];
     protected $skipValidation     = false;
+
+    public function info()
+    {
+        return $this->first();
+    }
+    public function unlock()
+    {
+        $data = [
+            'unlock' => TRUE,
+        ];
+        return $this->update(1 , $data);
+    }
+    public function install($big_name, $little_name)
+    {
+        $data = [
+            'complete_name' => $big_name,
+            'little_name' => $little_name,
+        ];
+        $this->insert($data);
+        
+    }
+    public function update_data($big_name, $little_name)
+    {
+        $data = [
+            'complete_name' => $big_name,
+            'little_name' => $little_name,
+        ];
+        $this->update(1 , $data);
+    }
 }

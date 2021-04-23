@@ -16,8 +16,8 @@ class User extends Migration
 				'unsigned'       => true,
 			],
 			'first_name'       => [
-					'type'       => 'VARCHAR',
-					'constraint' => '100',
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
 			],
 			'last_name'       => [
 				'type'       => 'VARCHAR',
@@ -45,14 +45,47 @@ class User extends Migration
 				'constraint'     => 255,
 				'unsigned'       => true,
 			],
-	]);
-	$this->forge->addKey('id', true);
-	$this->forge->createTable('user');
+			'role_name'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+			'group_name'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+		]);
+		$this->forge->addKey('id', true);
+		$this->forge->createTable('user');
+		$db = \Config\Database::connect('default');
+		$builder = $db->table('permission');
+		$data = [
+			'name' => 'My Account',
+			'app'  => 'Users',
+			'page'  => 'index',
+			'variant' => '',
+			'group'  => 'ALL',
+			'role'  => 'ALL',
+			'type'  => 'SYSTEM',
+		];
+		$builder->insert($data);
+		$data = [
+			'name' => 'List ALL Users',
+			'app'  => 'Users',
+			'page'  => 'list',
+			'variant' => '',
+			'group'  => 'ALL',
+			'role'  => 'ALL',
+			'type'  => 'SYSTEM',
+		];
+		$builder->insert($data);
 	}
 
 	public function down()
 	{
 		//
 		$this->forge->dropTable('user');
+		$db = \Config\Database::connect('default');
+		$builder = $db->table('permission');
+		$builder->delete(['app' => "Users"]);
 	}
 }

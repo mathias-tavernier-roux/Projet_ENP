@@ -24,10 +24,18 @@
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Projet ENP<br>Assistant D'Installation<br></h4>
                                     </div>
-                                    <form class="user" method="POST" action="/Setup/Install">
+                                    <form class="user" method="POST" action="/Setup/start_install">
+                                        <div>
                                         <h5 style="text-align: center;">Création des Identifiants de Administrateur Systeme</h5>
                                         <input class="form-control form-control-user" type="text" id="admin_login" placeholder="Créez Un Identifiant Administrateur" name="login" required style="padding-bottom: 16px;margin-bottom: 10px;">
-                                        <input class="form-control form-control-user" type="password" id="admin_password" placeholder="Créez Un Mot de Passe Administrateur" name="password" required></div>
+                                        <input class="form-control form-control-user" type="password" id="admin_password" placeholder="Créez Un Mot de Passe Administrateur" name="password" required>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                        <h5 style="text-align: center;">Informations Lié a L'Entreprise Hebergent L'ENP</h5>
+                                        <input class="form-control form-control-user" type="text" id="entreprise" placeholder="Ecrivez Votre Entreprise (En Entier)" name="big_name" required style="padding-bottom: 16px;margin-bottom: 10px;">
+                                        <input class="form-control form-control-user" type="text" id="entreprise2" placeholder="Ecrivez Votre Entreprise (En Abrégé)" name="mini_name" required>
+                                        </div>
                                         <hr>
                                         <h5 style="text-align: center;">Choix des Paquets A Installer Après L'Installation de L'Application Web</h5>
                                         <div>
@@ -35,9 +43,9 @@
                                             <p>Description de L'Application</p>
                                         </div>
                                         <hr>
-                                        <div class="form-check text-start"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="Confirmation CGU">J'Accepte Les Conditions Général d'Utilisation et Les Conditions Lié A La Licence De L'Application</label></div>
+                                        <div class="form-check text-start"><input class="form-check-input" type="checkbox" id="formCheck-2" required><label class="form-check-label" for="Confirmation CGU">J'Accepte Les Conditions Général d'Utilisation et Les Conditions Lié A La Licence De L'Application</label></div>
                                         <p style="margin-bottom: 0px;"><a href="cgu">Accéder au CGU (Conditions General d'Utilisation)</a></p>
-                                        <p><a href="cga">Accéder au CLA (Conditions lié a la Licence de l'Application)</a></p><a class="btn btn-primary" role="button" style="width: 100%;">Lancer L'Installation</a>
+                                        <p><a href="cga">Accéder au CLA (Conditions lié a la Licence de l'Application)</a></p><button class="btn btn-primary d-block btn-user w-100" type="submit">Lancer L'Installation</button>
                                         <div class="mb-3">
                                             <div class="custom-control custom-checkbox small"></div>
                                         </div>

@@ -11,7 +11,7 @@
                 <table class="table my-0" id="dataTable">
                     <thead>
                         <tr>
-                            <th>Nom Du Groupe</th>
+                            <th>Nom du Groupe</th>
                             <th>Pole</th>
                             <th>Taille</th>
                             <th></th>
@@ -20,19 +20,31 @@
                     <?php
                     if ($list != NULL) {
                         foreach ($list as $article) {
+                            if ($article['id'] != 1)
+                            {
                             $id = $article['id'];
                             $nom = $article['name'];
                             $pole = $article['pole'];
                             $taille = $article['taille'];
+                            $link = $article['link_name'];
+                            if ($nom == $link)
+                            {
+                                $name = "$nom";
+                            }
+                            else
+                            {
+                                $name = "$nom $link";
+                            }
                     ?>
                             <tr>
-                                <td><?= $nom ?></td>
+                                <td><?= $name ?></td>
                                 <td><?= $pole ?></td>
                                 <td><?= $taille ?></td>
                                 <td><form method=POST action=/Groups/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                             </tr>
                     <?php
                         }
+                    }
                     }
                     ?>
                     <tfoot>
@@ -54,6 +66,7 @@
                         <thead>
                             <tr>
                                 <th>Nom du Groupe</th>
+                                <th>Variante</th>
                                 <th>Pole</th>
                                 <th>Taille</th>
                                 <th></th>
@@ -61,7 +74,8 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input required class="form-control" type="text" name="name" style="width: 150px;"></td>
+                                <td><input required class="form-control" type="text" name="link" style="width: 150px;"></td>
+                                <td><input class="form-control" type="text" name="name" style="width: 150px;"></td>
                                 <td><input required class="form-control" type="text" name="pole" style="width: 150px;"></td>
                                 <td><input required class="form-control" type="text" name="taille" style="width: 100px;"></td>
                                 <td><button class="btn btn-primary" type="submit">Créer Un Groupe</button></td>

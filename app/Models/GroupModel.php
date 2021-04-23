@@ -15,7 +15,7 @@ class GroupModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id','name','pole','taille'];
+    protected $allowedFields = ['id','name','pole','taille','link_name'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -26,12 +26,13 @@ class GroupModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function create($group_name,$pole,$taille)
+    public function create($group_name,$pole,$taille,$link)
     {
         $data = [
             'name' => $group_name,
             'pole'    => $pole,
             'taille'    => $taille,
+            'link_name'    => $link,
         ];
         
         $this->insert($data);
@@ -40,7 +41,17 @@ class GroupModel extends Model
     {
         return $this->findAll();
     }
-
+    public function list_limited($variant)
+    {
+        if ($variant == "ALL")
+        {
+            return $this->findAll();
+        }
+        else
+        {
+            return $this->where('name', $variant)->findAll();
+        }
+    }
     public function remove($GID)
     {
         return $this->delete($GID);

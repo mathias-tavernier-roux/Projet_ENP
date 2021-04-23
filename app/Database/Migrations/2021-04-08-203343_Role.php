@@ -27,11 +27,26 @@ class Role extends Migration
 	]);
 	$this->forge->addKey('id', true);
 	$this->forge->createTable('role');
+	$db = \Config\Database::connect('default');
+	$builder = $db->table('permission');
+	$data = [
+		'name' => 'List ALL Role',
+		'app'  => 'Statuts',
+		'page'  => 'index',
+		'variant' => '',
+		'group'  => 'SYSTEM',
+		'role'  => 'ADMIN',
+		'type'  => 'SYSTEM',
+	];
+	$builder->insert($data);
 	}
 
 	public function down()
 	{
 		//
 		$this->forge->dropTable('role');
+		$db = \Config\Database::connect('default');
+		$builder = $db->table('permission');
+		$builder->delete(['app' => "Statuts"]);
 	}
 }

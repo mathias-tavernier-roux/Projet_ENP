@@ -1,3 +1,47 @@
+<?php
+$session = session();
+$this->User = model('App\Models\UserModel', false);
+$this->Permission = model('App\Models\PermissionModel', false);
+if (!isset($session->id))
+{
+    redirect()->to('/Users/login');
+}
+$user = $this->User->info($session->id);
+$group = $user['group_id'];
+$role = $user['role_id'];
+$group_name = $user['group_name'];
+$role_name = $user['role_name'];
+$first_name = $user['first_name'];
+$last_name = $user['last_name'];
+$birth = $user['birth'];
+if ($group == 1 && $role == 1)
+{
+    $group = "SYSTEM";
+    $role = "ADMIN"; 
+}
+$permissions = $this->Permission->list_my_perms($group, $role);
+if (isset($app))
+{
+foreach ($permissions as $perm) {
+    $app_perm = in_array($app, $perm);
+if ($app_perm == true)
+    {
+    $page_perm = in_array($page, $perm);
+    if ($page_perm == true)
+        {
+
+        }
+    else
+        {
+            redirect()->to('/Users/index');
+        }
+    }
+else
+    {
+        redirect()->to('/Users/index');
+    }
+}}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,13 +63,86 @@
                     <div class="sidebar-brand-text mx-3"><span>ASM - ENP</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <a style="color:white;">Panneau de Configuration</a>
+                <a style="color:white;">Systeme</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="/System/appstore"><span><strong>Appstore</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/System/"></i><span><strong>Informations Systeme</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/Groups/"><span><strong>Groupes</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/Statuts/"><span><strong>Roles/Statut</strong></span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/Users/list"><span><strong>Utilisateurs</strong></span></a></li>
+                <?php
+                foreach ($permissions as $perm) {
+                    $app_perm = in_array('System', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('appstore', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/System/appstore"><span><strong>Appstore</strong></span></a></li>
+                <?php
+                }}}
+                ?>
+                 <?php
+                foreach ($permissions as $perm) {
+                    $app_perm = in_array('System', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('permissions', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/System/permissions"><span><strong>Permissions</strong></span></a></li>
+                <?php
+                }}}
+                ?>
+                <?php
+                foreach ($permissions as $perm) {
+                $app_perm = in_array('System', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('index', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/System/"></i><span><strong>Informations Systeme</strong></span></a></li>
+                <?php
+                }}}
+                ?>
+                <?php
+                foreach ($permissions as $perm) {
+                $app_perm = in_array('Groups', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('index', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/Groups/"><span><strong>Groupes</strong></span></a></li>
+                <?php
+                }}}
+                ?>
+                <?php
+                foreach ($permissions as $perm) {
+                $app_perm = in_array('Statuts', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('index', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/Statuts/"><span><strong>Roles/Statut</strong></span></a></li>
+                <?php
+                }}}
+                ?>
+                <?php
+                foreach ($permissions as $perm) {
+                $app_perm = in_array('Users', $perm);
+                if ($app_perm == true)
+                {
+                    $page_perm = in_array('list', $perm);
+                    if ($page_perm == true)
+                    {
+                ?>
+                <li class="nav-item"><a class="nav-link active" href="/Users/list"><span><strong>Utilisateurs</strong></span></a></li>
+                <?php
+                }}}
+                ?>
                 </ul>
                 <a style="color:white;">Application</a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
@@ -40,7 +157,7 @@
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">%Nom de L'Utilisateur%</span><img class="border rounded-circle img-profile" src="<?php echo base_url('assets/img/avatars/0.png'); ?>"></a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?=$user['first_name']; $user['last_name'];?></span><img class="border rounded-circle img-profile" src="<?php echo base_url('assets/img/avatars/0.png'); ?>"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
                                     <a class="dropdown-item" href="/Users/"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Gerer Mon Profil</a>
                                         <div class="dropdown-divider"></div>
