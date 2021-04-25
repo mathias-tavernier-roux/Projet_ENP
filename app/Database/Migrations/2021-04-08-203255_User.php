@@ -35,6 +35,14 @@ class User extends Migration
 				'type'       => 'VARCHAR',
 				'constraint' => '100',
 			],
+			'role_name'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
+			'group_name'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+			],
 			'group_id'          => [
 				'type'           => 'INT',
 				'constraint'     => 255,
@@ -44,14 +52,6 @@ class User extends Migration
 				'type'           => 'INT',
 				'constraint'     => 255,
 				'unsigned'       => true,
-			],
-			'role_name'       => [
-				'type'       => 'VARCHAR',
-				'constraint' => '100',
-			],
-			'group_name'       => [
-				'type'       => 'VARCHAR',
-				'constraint' => '100',
 			],
 		]);
 		$this->forge->addKey('id', true);
