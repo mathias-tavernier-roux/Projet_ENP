@@ -33,7 +33,7 @@
                             }
                             else
                             {
-                                $name = "$nom $link";
+                                $name = "$link $nom ";
                             }
                     ?>
                             <tr>

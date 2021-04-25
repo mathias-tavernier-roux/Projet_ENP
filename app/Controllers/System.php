@@ -52,6 +52,14 @@ class System extends BaseController
 		$permission_app = $permission_info['app'];
 		$permission_page = $permission_info['page'];
 		$this->Permission->create($permission_name, $permission_app, $permission_page, $permission_variant, $permission_group, $permission_role);
+		return $this->permissions();
+	}
+	public function remove_permission()
+	{
+		$this->Permission = model('App\Models\PermissionModel', false);
+		$permission = $_REQUEST['id'];
+		$this->Permission->remove($permission);
+		return $this->permissions();
 	}
 	// UNLOCK CORE (CETTE PROCEDURE DEBLOQUE L'INSTALLATION D'APPLICATION PROVENANT DE SOURCE INCONNUS)
 	public function CORE_UNLOCK_PROCEDURE()

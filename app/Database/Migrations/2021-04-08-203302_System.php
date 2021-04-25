@@ -69,7 +69,7 @@ class System extends Migration
 		'variant' => '',
 		'group'  => 'SYSTEM',
 		'role'  => 'ADMIN',
-		'type'  => 'SYSTEM',
+		'type'  => 'ROOT',
 	];
 	$builder->insert($data);
 	$data = [

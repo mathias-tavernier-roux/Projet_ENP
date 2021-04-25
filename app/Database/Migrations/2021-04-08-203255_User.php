@@ -72,9 +72,9 @@ class User extends Migration
 			'name' => 'List ALL Users',
 			'app'  => 'Users',
 			'page'  => 'list',
-			'variant' => '',
-			'group'  => 'ALL',
-			'role'  => 'ALL',
+			'variant' => 'ALL',
+			'group'  => 'SYSTEM',
+			'role'  => 'ADMIN',
 			'type'  => 'SYSTEM',
 		];
 		$builder->insert($data);

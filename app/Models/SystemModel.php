@@ -15,7 +15,7 @@ class SystemModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['id','complete_name','little_name','version_systeme','version_framework','unlock',];
+    protected $allowedFields = ['id','complete_name','little_name','version_systeme','version_framework','unlock'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';
@@ -33,7 +33,7 @@ class SystemModel extends Model
     public function unlock()
     {
         $data = [
-            'unlock' => TRUE,
+            'unlock' => 1,
         ];
         return $this->update(1 , $data);
     }

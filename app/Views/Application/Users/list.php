@@ -1,6 +1,10 @@
 <?php
-if (!isset($_REQUEST['group_search']))
-{
+$session = session();
+$this->User = model('App\Models\UserModel', false);
+$user = $this->User->info($session->id);
+$group = $user['group_id'];
+$role = $user['role_id'];
+if (!isset($_REQUEST['group_search'])) {
     $_REQUEST['group_search'] = 0;
 }
 ?>
@@ -12,18 +16,28 @@ if (!isset($_REQUEST['group_search']))
     <p class="text-primary m-0 fw-bold">Liste des Utilisateurs</p>
     <form method="POST">
         <select class="form-select" name="group_search">
-        <?php
-        if ($group_list != NULL) {
-            foreach ($group_list as $group) {
-                $id = $group['id'];
-                $nom1 = $group['link_name'];
-                $nom2 = $group['name'];
-        ?>
-                <option value="<?= $id ?>" selected=""><?= "$nom2 $nom1" ?></option>
-        <?php
+            <?php
+            if ($group_list != NULL) {
+                foreach ($group_list as $group) {
+                    if ($group['id'] != 1) {
+                        $id = $group['id'];
+                        $group_name_list = array_column($group_list, 'name', 'id');
+                        $group_variant_list = array_column($group_list, 'link_name', 'id');
+                        $role_name_list = array_column($role_list, 'name', 'id');
+                        $group = $group_name_list["$id"];
+                        $group_variant = $group_variant_list["$id"];
+                        if ($group == $group_variant) {
+                            $group_perm = "$group";
+                        } else {
+                            $group_perm = "$group_variant $group ";
+                        }
+            ?>
+                        <option value="<?= $id ?>"><?= "$group_perm" ?></option>
+            <?php
+                    }
+                }
             }
-        }
-        ?>
+            ?>
         </select>
         <button class="btn btn-primary" type="submit" style="width: 100%;">Rechercher</button>
     </form>
@@ -47,6 +61,7 @@ if (!isset($_REQUEST['group_search']))
                     foreach ($user_list as $user) {
                         if ($user['id'] != 1) {
                             if ($user['group_id'] == $_REQUEST['group_search']) {
+                                if ($user['role_id'] >= $role) {
                                 $uid = $user['id'];
                                 $nom = $user['first_name'];
                                 $prenom = $user['last_name'];
@@ -67,12 +82,22 @@ if (!isset($_REQUEST['group_search']))
                                                 <?php
                                                 if ($group_list != NULL) {
                                                     foreach ($group_list as $group) {
-                                                        $id = $group['id'];
-                                                        $nom1 = $group['link_name'];
-                                                        $nom2 = $group['name'];
+                                                        if ($group['id'] != 1) {
+                                                            $id = $group['id'];
+                                                            $group_name_list = array_column($group_list, 'name', 'id');
+                                                            $group_variant_list = array_column($group_list, 'link_name', 'id');
+                                                            $role_name_list = array_column($role_list, 'name', 'id');
+                                                            $group = $group_name_list["$id"];
+                                                            $group_variant = $group_variant_list["$id"];
+                                                            if ($group == $group_variant) {
+                                                                $group_perm = "$group";
+                                                            } else {
+                                                                $group_perm = "$group_variant $group ";
+                                                            }
                                                 ?>
-                                                        <option value="<?= $id ?>" selected=""><?= "$nom2 $nom1" ?></option>
+                                                            <option value="<?= $id ?>"><?= "$group_perm" ?></option>
                                                 <?php
+                                                        }
                                                     }
                                                 }
                                                 ?>
@@ -81,14 +106,16 @@ if (!isset($_REQUEST['group_search']))
                                                 <?php
                                                 if ($role_list != NULL) {
                                                     foreach ($role_list as $statut) {
-                                                        $id = $statut['id'];
-                                                        $nom = $statut['name'];
+                                                        if ($role <= $statut['id']) {
+                                                            $id = $statut['id'];
+                                                            $nom = $statut['name'];
                                                 ?>
-                                            <option value="<?= $id ?>" selected=""><?= $nom ?></option>
-                                            <?php
+                                                            <option value="<?= $id ?>" selected=""><?= $nom ?></option>
+                                                <?php
+                                                        }
+                                                    }
                                                 }
-                                                }
-                                            ?>
+                                                ?>
                                             </select>
                                     </td>
                                     <td>
@@ -98,7 +125,7 @@ if (!isset($_REQUEST['group_search']))
                                     </td>
                                 </tr>
                 <?php
-                            }
+                            }}
                         }
                     }
                 }
@@ -125,28 +152,41 @@ if (!isset($_REQUEST['group_search']))
             <label class="form-label">Mot de Passe</label><input name="password" id="password" class="form-control" type="text">
             <hr><label class="form-label">Groupe De L'Utilisateur</label>
             <select name="group_id" id="group_id" class="form-select">
-            <?php
+                <?php
                 if ($group_list != NULL) {
                     foreach ($group_list as $group) {
-                        $id = $group['id'];
-                        $nom1 = $group['link_name'];
-                        $nom2 = $group['name'];
-                        ?>
-                        <option value="<?= $id ?>" selected=""><?= "$nom2 $nom1" ?></option>
-                        <?php
+                        if ($group['id'] != 1) {
+                            $id = $group['id'];
+                            $group_name_list = array_column($group_list, 'name', 'id');
+                            $group_variant_list = array_column($group_list, 'link_name', 'id');
+                            $role_name_list = array_column($role_list, 'name', 'id');
+                            $group = $group_name_list["$id"];
+                            $group_variant = $group_variant_list["$id"];
+                            if ($group == $group_variant) {
+                                $group_perm = "$group";
+                            } else {
+                                $group_perm = "$group_variant $group ";
+                            }
+                ?>
+                            <option value="<?= $id ?>"><?= "$group_perm" ?></option>
+                <?php
                         }
                     }
+                }
                 ?>
-            </select><label class="form-label">Statut de L'Utilisateur</label>
+            </select>
+            <label class="form-label">Statut de L'Utilisateur</label>
             <select name="role_id" id="role_id" class="form-select">
                 <?php
                 if ($role_list != NULL) {
                     foreach ($role_list as $statut) {
-                        $id = $statut['id'];
-                        $nom = $statut['name'];
+                        if ($role <= $statut['id']) {
+                            $id = $statut['id'];
+                            $nom = $statut['name'];
                 ?>
-                        <option value="<?= $id ?>" selected=""><?= $nom ?></option>
+                            <option value="<?= $id ?>" selected=""><?= $nom ?></option>
                 <?php
+                        }
                     }
                 }
                 ?>

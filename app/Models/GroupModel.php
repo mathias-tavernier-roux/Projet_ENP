@@ -49,7 +49,7 @@ class GroupModel extends Model
         }
         else
         {
-            return $this->where('name', $variant)->findAll();
+            return $this->where('link_name', $variant)->findAll();
         }
     }
     public function remove($GID)

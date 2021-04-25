@@ -30,8 +30,6 @@
                                     <hr>
                                     <form method="POST" action="/System/CORE_UNLOCK_EXECUTE">
                                         <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" required><label class="form-check-label" for="formCheck-1">En Cochant Cette Case <strong>J'Accepte Les Conditions Suivantes :</strong></label></div>
-                                    </form>
-                                    <form class="user">
                                         <div class="mb-3"></div>
                                         <p class="text-start mb-4">- J'ai Pris Conscience et J'Accepte <strong>Les Conditions et Les Risques Lié Au Déverrouillage du Cœur</strong><br>- Je Renonce a <strong>Mes Droits de Garantie Lié A L'Application</strong> (Voir Le Manuel Pour Plus D'Information)<br>- Je Prend <strong>L'Entière Responsabilité des Risques</strong> Lié A L'Installation D'Application Provenant de Source Inconnus<br>- J'Accepte de<strong> Ne Pas Modifier La Base de Données ou d'autres fonctions du cœur&nbsp;</strong>Pour Camoufler Ce Déverrouillage en Cas de Panne<br><br></p><button class="btn btn-primary d-block btn-user w-100" type="submit" style="background: rgb(130,8,0);">Lancer Le Déverouillage</button>
                                     </form>
