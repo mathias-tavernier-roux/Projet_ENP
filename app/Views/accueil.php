@@ -30,7 +30,7 @@
                                         <p class="text-center">Cette Page est une Page Web One Page prédéfini par le Créateur du Projet ENP</p>
                                         <hr>
                                         <h5 style="text-align: center;">A Quoi Sert Cette Page</h5>
-                                        <p class="text-center"><strong>A Rien</strong> <br>(Elle Est Censé Etre Remplacé par Une Page Web One Page Symbolisant La Page d'Accueil De Votre Entreprise)<br><br>Si Cette Page Apparait C'est que Votre Administrateur ENP Ne L'a pas Modifié</p><button class="btn btn-primary d-block btn-user w-100" type="link" href="/Users/login">Accéder a la page d'identification</button>
+                                        <p class="text-center"><strong>A Rien</strong> <br>(Elle Est Censé Etre Remplacé par Une Page Web One Page Symbolisant La Page d'Accueil De Votre Entreprise)<br><br>Si Cette Page Apparait C'est que Votre Administrateur ENP Ne L'a pas Modifié</p><a class="btn btn-primary" role="button" style="width: 100%;" href="/users/login">Accéder a La Page d&#39;identification</a>
                                         <div class="mb-3">
                                             <div class="custom-control custom-checkbox small"></div>
                                         </div>
