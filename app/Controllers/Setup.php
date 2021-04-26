@@ -39,6 +39,7 @@ class Setup extends BaseController
 		$data = [
             'name' => "ADMIN",
             'description'    => "Administrateur Systeme",
+			'hierarchy'    => 1,
         ];
 		$builder->insert($data);
 		$builder = $db->table('user');

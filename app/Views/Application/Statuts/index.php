@@ -13,22 +13,25 @@
                     <tr>
                         <th>Nom Du Statut / Role</th>
                         <th>Description</th>
+                        <th>Hierarchie</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php
                     if ($list != NULL) {
-                        foreach ($list as $article) {
-                            if ($article['id'] != 1)
+                        foreach ($list as $role) {
+                            if ($role['id'] != 1)
                             {
-                            $id = $article['id'];
-                            $nom = $article['name'];
-                            $description = $article['description'];
+                            $id = $role['id'];
+                            $nom = $role['name'];
+                            $description = $role['description'];
+                            $hierarchy = $role['hierarchy'];
                     ?>
                     <tr>
                         <td><?=$nom?></td>
                         <td><?=$description?></td>
+                        <td><?=$hierarchy?></td>
                         <td><form method=POST action=/Statuts/remove><input type="hidden" id="id" name="id" value="<?= $id ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form></td>
                     </tr>
                     <?php
@@ -55,13 +58,15 @@
                     <thead>
                         <tr>
                             <th>Nom du Role</th>
+                            <th>Hierarchie</th>
                             <th>Description</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input class="form-control" type="text" id="name" name="name" style="width: 150px;"></td>
+                            <td><input class="form-control" type="text" id="name" name="name" style="width: 150px;" required></td>
+                            <td><input class="form-control" type="number" id="hierarchy" name="hierarchy" style="width: 150px;" required></td>
                             <td><input class="form-control" type="text" id="description" name="description" style="width: 100px;">
                             </td>
                             <td><button class="btn btn-primary" type="submit">Créer Un Role</button></td>

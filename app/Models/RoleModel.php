@@ -24,11 +24,12 @@ class RoleModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function create($role_name,$description)
+    public function create($role_name,$description,$hierarchy)
     {
         $data = [
             'name' => $role_name,
             'description'    => $description,
+            'hierarchy'    => $hierarchy,
         ];
         $this->insert($data);
     }

@@ -4,12 +4,18 @@ $this->User = model('App\Models\UserModel', false);
 $user = $this->User->info($session->id);
 $group = $user['group_id'];
 $role = $user['role_id'];
+$role_hierarchy = array_column($role_list, 'hierarchy', 'id');
+$role_user = $role_hierarchy["$role"];
 if (!isset($_REQUEST['group_search'])) {
     $_REQUEST['group_search'] = 0;
 }
 ?>
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
+<?php
+var_dump($role_hierarchy);
+var_dump($role);
+?>
 <h3 class="text-center text-dark mb-4">Liste des Utilisateurs</h3>
 <div class="alert alert-danger text-center d-lg-none" role="alert" style="margin-bottom: 10px;padding-top: 5px;padding-left: 0px;padding-bottom: 5px;padding-right: 0px;"><span><strong>Fonction Uniquement Disponible Sur&nbsp;Ordinateur</strong><br></span></div>
 <div class="card-header py-3">
@@ -61,71 +67,75 @@ if (!isset($_REQUEST['group_search'])) {
                     foreach ($user_list as $user) {
                         if ($user['id'] != 1) {
                             if ($user['group_id'] == $_REQUEST['group_search']) {
-                                if ($user['role_id'] >= $role) {
-                                $uid = $user['id'];
-                                $nom = $user['first_name'];
-                                $prenom = $user['last_name'];
-                                $group = $user['group_name'];
-                                $statut = $user['role_name'];
-                                $date_naissance = $user['birth'];
-                                $idp = 0
+                                $role_id = $user['role_id'];
+                                $role_hierarchy = array_column($role_list, 'hierarchy', 'id');
+                                $role = $role_hierarchy["$role_id"];
+                                if ($role_user < $role) {
+                                    $uid = $user['id'];
+                                    $nom = $user['first_name'];
+                                    $prenom = $user['last_name'];
+                                    $group = $user['group_name'];
+                                    $statut = $user['role_name'];
+                                    $date_naissance = $user['birth'];
+                                    $idp = 0
                 ?>
-                                <tr>
-                                    <td><img class="rounded-circle me-2" width="30" height="30" src="<?php echo base_url("assets/img/avatars/$idp.png"); ?>"><?= $nom ?> <?= $prenom ?></td>
-                                    <td><?= $group ?></td>
-                                    <td><?= $statut ?></td>
-                                    <td><?= $date_naissance ?></td>
-                                    <td>
-                                        <form method=POST action=/Users/edit>
-                                            <input type="hidden" id="id" name="id" value="<?= $uid ?>">
-                                            <select name="group_id" id="group_id" class="form-select" style="margin-bottom:10px">
-                                                <?php
-                                                if ($group_list != NULL) {
-                                                    foreach ($group_list as $group) {
-                                                        if ($group['id'] != 1) {
-                                                            $id = $group['id'];
-                                                            $group_name_list = array_column($group_list, 'name', 'id');
-                                                            $group_variant_list = array_column($group_list, 'link_name', 'id');
-                                                            $role_name_list = array_column($role_list, 'name', 'id');
-                                                            $group = $group_name_list["$id"];
-                                                            $group_variant = $group_variant_list["$id"];
-                                                            if ($group == $group_variant) {
-                                                                $group_perm = "$group";
-                                                            } else {
-                                                                $group_perm = "$group_variant $group ";
+                                    <tr>
+                                        <td><img class="rounded-circle me-2" width="30" height="30" src="<?php echo base_url("assets/img/avatars/$idp.png"); ?>"><?= $nom ?> <?= $prenom ?></td>
+                                        <td><?= $group ?></td>
+                                        <td><?= $statut ?></td>
+                                        <td><?= $date_naissance ?></td>
+                                        <td>
+                                            <form method=POST action=/Users/edit>
+                                                <input type="hidden" id="id" name="id" value="<?= $uid ?>">
+                                                <select name="group_id" id="group_id" class="form-select" style="margin-bottom:10px">
+                                                    <?php
+                                                    if ($group_list != NULL) {
+                                                        foreach ($group_list as $group) {
+                                                            if ($group['id'] != 1) {
+                                                                $id = $group['id'];
+                                                                $group_name_list = array_column($group_list, 'name', 'id');
+                                                                $group_variant_list = array_column($group_list, 'link_name', 'id');
+                                                                $role_name_list = array_column($role_list, 'name', 'id');
+                                                                $group = $group_name_list["$id"];
+                                                                $group_variant = $group_variant_list["$id"];
+                                                                if ($group == $group_variant) {
+                                                                    $group_perm = "$group";
+                                                                } else {
+                                                                    $group_perm = "$group_variant $group ";
+                                                                }
+                                                    ?>
+                                                                <option value="<?= $id ?>"><?= "$group_perm" ?></option>
+                                                    <?php
                                                             }
-                                                ?>
-                                                            <option value="<?= $id ?>"><?= "$group_perm" ?></option>
-                                                <?php
                                                         }
                                                     }
-                                                }
-                                                ?>
-                                            </select>
-                                            <select name="role_id" id="role_id" class="form-select">
-                                                <?php
-                                                if ($role_list != NULL) {
-                                                    foreach ($role_list as $statut) {
-                                                        if ($role <= $statut['id']) {
-                                                            $id = $statut['id'];
-                                                            $nom = $statut['name'];
-                                                ?>
-                                                            <option value="<?= $id ?>" selected=""><?= $nom ?></option>
-                                                <?php
+                                                    ?>
+                                                </select>
+                                                <select name="role_id" id="role_id" class="form-select">
+                                                    <?php
+                                                    if ($role_list != NULL) {
+                                                        foreach ($role_list as $statut) {
+                                                            if ($role_user <= $statut['hierarchy']) {
+                                                                $id = $statut['id'];
+                                                                $nom = $statut['name'];
+                                                    ?>
+                                                                <option value="<?= $id ?>" selected=""><?= $nom ?></option>
+                                                    <?php
+                                                            }
                                                         }
                                                     }
-                                                }
-                                                ?>
-                                            </select>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-primary" style="margin-bottom:10px" type="submit">Modifier</button>
-                                        </form>
-                                        <form method=POST action=/Users/delete><input type="hidden" id="id" name="id" value="<?= $uid ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form>
-                                    </td>
-                                </tr>
+                                                    ?>
+                                                </select>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary" style="margin-bottom:10px" type="submit">Modifier</button>
+                                            </form>
+                                            <form method=POST action=/Users/delete><input type="hidden" id="id" name="id" value="<?= $uid ?>"><button class="btn btn-primary" type="submit">Supprimer</button></form>
+                                        </td>
+                                    </tr>
                 <?php
-                            }}
+                                }
+                            }
                         }
                     }
                 }
@@ -180,7 +190,7 @@ if (!isset($_REQUEST['group_search'])) {
                 <?php
                 if ($role_list != NULL) {
                     foreach ($role_list as $statut) {
-                        if ($role <= $statut['id']) {
+                        if ($role_user <= $statut['hierarchy']) {
                             $id = $statut['id'];
                             $nom = $statut['name'];
                 ?>
