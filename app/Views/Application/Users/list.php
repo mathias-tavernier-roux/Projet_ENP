@@ -12,10 +12,6 @@ if (!isset($_REQUEST['group_search'])) {
 ?>
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
-<?php
-var_dump($role_hierarchy);
-var_dump($role);
-?>
 <h3 class="text-center text-dark mb-4">Liste des Utilisateurs</h3>
 <div class="alert alert-danger text-center d-lg-none" role="alert" style="margin-bottom: 10px;padding-top: 5px;padding-left: 0px;padding-bottom: 5px;padding-right: 0px;"><span><strong>Fonction Uniquement Disponible Sur&nbsp;Ordinateur</strong><br></span></div>
 <div class="card-header py-3">
