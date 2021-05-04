@@ -12,6 +12,8 @@ if (!isset($_REQUEST['group_search'])) {
 ?>
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
+<div class="alert alert-danger text-center d-lg-none" role="alert"><span><strong>Fonction Disponible Uniquement Sur&nbsp;Ordinateur</strong></span></div>
+                <div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
 <h3 class="text-center text-dark mb-4">Liste des Utilisateurs</h3>
 <div class="alert alert-danger text-center d-lg-none" role="alert" style="margin-bottom: 10px;padding-top: 5px;padding-left: 0px;padding-bottom: 5px;padding-right: 0px;"><span><strong>Fonction Uniquement Disponible Sur&nbsp;Ordinateur</strong><br></span></div>
 <div class="card-header py-3">

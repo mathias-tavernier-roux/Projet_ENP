@@ -72,16 +72,6 @@ class System extends Migration
 		'type'  => 'ROOT',
 	];
 	$builder->insert($data);
-	$data = [
-		'name' => 'Appstore',
-		'app'  => 'System',
-		'page'  => 'appstore',
-		'variant' => '',
-		'group'  => 'SYSTEM',
-		'role'  => 'ADMIN',
-		'type'  => 'SYSTEM',
-	];
-	$builder->insert($data);
 	}
 
 	public function down()
