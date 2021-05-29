@@ -6,6 +6,7 @@ class Appstore extends BaseController
 {
 	public function __construct()
 	{
+		echo __dir__;
 		$this->Appstore = model('App\Models\AppstoreModel', false);
 		$this->AppPage = model('App\Models\AppPageModel', false);
 	}
@@ -26,6 +27,8 @@ class Appstore extends BaseController
 		$version = $_REQUEST['version'];
 		$type = $_REQUEST['type'];
 		$zip = new \ZipArchive;
+		$root = constant("ROOTPATH");
+        $dir = "$root\public\Appstore\official";
 		$res = $zip->open("../public/Appstore/Official/$zip_name");
 		if ($res === TRUE) {
 

@@ -22,7 +22,8 @@
                     <tbody>
                         <?php
                         // Module de Recherche
-                        $dir = '../public/Appstore/official';
+                        $root = constant("ROOTPATH");
+                        $dir = "$root\public\Appstore\official";
                         $dossier = scandir($dir);
                         if ($dossier != NULL) {
                             $app_list = array_column($list_official, 'zip_name');
