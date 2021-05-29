@@ -1,6 +1,7 @@
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
-<h3 class="text-dark mb-4">Permissions</h3>
+<div class="container-fluid d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
+<center><h3 class="text-dark mb-4">Permissions</h3></center>
 <div class="card shadow" style="margin-bottom: 20px;">
     <div class="card-header py-3">
         <p class="text-primary m-0 fw-bold">Liste des Permissions Disponible</p>
@@ -167,7 +168,7 @@
                 ?>
             </select><button class="btn btn-primary" type="submit" style="width: 100%;">Ajouter Une Permission</button>
         </form>
-        <div></div>
     </div>
+</div>
 </div>
 <?= $this->endSection() ?>

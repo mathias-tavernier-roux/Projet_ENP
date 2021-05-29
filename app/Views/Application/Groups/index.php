@@ -1,5 +1,7 @@
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
+
+<div class="container-fluid d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
 <h3 class="text-center text-dark mb-4">Groupes</h3>
 <div class="container-fluid">
     <div class="card shadow" style="margin-bottom: 20px;">
@@ -89,5 +91,6 @@
             </form>
         </div>
     </div>
+</div>
 </div>
 <?= $this->endSection() ?>

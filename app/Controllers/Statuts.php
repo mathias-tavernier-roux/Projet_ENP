@@ -19,7 +19,10 @@ class Statuts extends BaseController
 	}
 	public function add()
 	{
-		$this->Role->create($_REQUEST['name'],$_REQUEST['description'],$_REQUEST['hierarchy']);
+		$name = $_REQUEST['name'];
+		$description = $_REQUEST['description'];
+		$hierarchy = intval($_REQUEST['hierarchy']);
+		$this->Role->create($name,$description,$hierarchy);
 		return $this->index();
 	}
 	public function remove()

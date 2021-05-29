@@ -17,7 +17,9 @@ class Users extends BaseController
 	public function index()
 	{
 		$titre = "Mon Compte";
-		return view('Application/Users/index', ['titre' => $titre,]);
+		$app = "Users";
+		$page = "index";
+		return view('Application/Users/index', ['titre' => $titre,'app' => $app, 'page' => $page,]);
 	}
 	public function login()
 	{

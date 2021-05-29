@@ -12,19 +12,11 @@ $birth = $user['birth'];
 ?>
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
+
+<div class="container-fluid d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
 <h3 class="text-dark mb-4" style="text-align: center;">Mon Profil</h3>
 <div class="row mb-3">
-    <div class="col-lg-4">
-        <div class="card mb-3">
-            <div class="card-header py-3">
-                <p class="text-primary m-0 fw-bold">Changer Ma Photo de Profil</p>
-            </div>
-            <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="/assets/img/avatars/0.png" width="160" height="160">
-                <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-8">
+    <div class="col-lg-12">
         <div class="row">
             <div class="col">
                 <div class="card shadow mb-3">
@@ -65,5 +57,6 @@ $birth = $user['birth'];
             </div>
         </div>
     </div>
+</div>
 </div>
 <?= $this->endSection() ?>

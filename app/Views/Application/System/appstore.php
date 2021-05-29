@@ -1,7 +1,7 @@
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
-<div class="alert alert-danger text-center d-lg-none" role="alert"><span><strong>Fonction Disponible Uniquement Sur&nbsp;Ordinateur</strong></span></div>
-                <div class="container-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+
+<div class="container-fluid d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
                     <h3 class="text-dark mb-4">App Store</h3>
                     <div class="card shadow" style="margin-bottom: 20px;">
                         <div class="card-header py-3">
