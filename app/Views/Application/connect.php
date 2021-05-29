@@ -23,7 +23,7 @@
                                 <div class="p-5">
                                     <div class="text-center">
                                         <h4 class="text-dark mb-4">Bienvenue Sur Votre ENP</h4>
-                                        <h5 class="text-dark mb-4">Association Saint Michel</h5>
+                                        <h5 class="text-dark mb-4">Espace Numerique Personnel</h5>
                                     </div>
                                     <form class="user" method="POST" action="/Users/connect">
                                         <div class="mb-3"><input class="form-control form-control-user" type="text" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Entrez Votre Login" name="login"></div>

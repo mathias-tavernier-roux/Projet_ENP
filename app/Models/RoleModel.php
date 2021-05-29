@@ -13,7 +13,7 @@ class RoleModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['name','description'];
+    protected $allowedFields = ['name','description','hierarchy'];
 
     protected $useTimestamps = false;
     protected $createdField  = '';

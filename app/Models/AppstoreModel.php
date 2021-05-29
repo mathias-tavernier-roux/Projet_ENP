@@ -30,9 +30,19 @@ class AppstoreModel extends Model
     {
         return $this->findall();
     }
+    public function list_my_apps()
+    {
+        $application = $this->findall();
+        $application = array_column($application, 'app_name');
+        return $application;
+    }
     public function list_official()
     {
         return $this->where('type', "OFFICIAL")->findall();
+    }
+    public function find_id($app_name, $zip_name, $type)
+    {
+        return $this->where('app_name', $app_name)->where('zip_name', $zip_name)->where('type', $type)->first();
     }
     public function list_homebrew()
     {
@@ -41,17 +51,17 @@ class AppstoreModel extends Model
     public function install($app_name,$zip_name,$version,$type)
     {
         $data = [
-            'app_name' => $app_name
-            'zip_name' => $zip_name
-            'version' => $version
-            'type' => $type
+            'app_name' => $app_name,
+            'zip_name' => $zip_name,
+            'version' => $version,
+            'type' => $type,
         ];
         return $this->insert($data);
     }
-    public function update($app_name,$zip_name,$version,$type)
+    public function upgrade($id,$version)
     {
         $data = [
-            'version' => $version
+            'version' => $version,
         ];
         return $this->update($id, $data);
     }

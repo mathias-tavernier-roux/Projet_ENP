@@ -19,9 +19,13 @@ class Appstore extends Migration
 					'type'       => 'VARCHAR',
 					'constraint' => '100',
 			],
+			'zip_name'       => [
+				'type'       => 'VARCHAR',
+				'constraint' => '100',
+		],
 			'version'       => [
 				'type'       => 'VARCHAR',
-				'constraint' => '6',
+				'constraint' => '10000',
 			],
 			'type'       => [
 				'type'       => 'VARCHAR',
@@ -32,7 +36,9 @@ class Appstore extends Migration
 	$this->forge->createTable('appstore');
 	$db = \Config\Database::connect('default');
 	$builder = $db->table('permission');
-	$builder->insert($data);
+	$builder->where('app', 'Appstore');
+	$builder->where('type', 'SYSTEM');
+	$builder->delete();
 	$data = [
 		'name' => 'Appstore',
 		'app'  => 'Appstore',

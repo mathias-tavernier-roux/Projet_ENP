@@ -1,5 +1,7 @@
 <?= $this->extend('templates/default') ?>
 <?= $this->section('content') ?>
+
+<div class="container-fluid d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
 <h3 class="text-dark mb-4" style="text-align: center;">Informations Systeme</h3>
 <div class="row mb-3">
     <div class="col-lg-12 col-xl-12 col-xxl-12">
@@ -55,5 +57,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <?= $this->endSection() ?>
