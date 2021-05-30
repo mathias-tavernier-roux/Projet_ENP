@@ -23,8 +23,8 @@
                         <?php
                         // Module de Recherche
                         $root = constant("ROOTPATH");
-                        $dir = "public\Appstore\official";
-                        $dir = "$root$dir"
+                        $dir = "public/Appstore/Official";
+                        $dir = "$root$dir";
                         $dossier = scandir($dir);
                         if ($dossier != NULL) {
                             $app_list = array_column($list_official, 'zip_name');
@@ -133,7 +133,9 @@
                         <tbody>
                         <?php
                         // Module de Recherche
-                        $dir = '../public/Appstore/homebrew';
+                        $root = constant("ROOTPATH");
+                        $dir = "public/Appstore/Homebrew";
+                        $dir = "$root$dir";
                         $dossier = scandir($dir);
                         if ($dossier != NULL) {
                             $app_list = array_column($list_homebrew, 'zip_name');
