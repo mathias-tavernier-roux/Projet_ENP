@@ -62,7 +62,7 @@ class Appstore extends BaseController
 		$app_name = $_REQUEST['app_name'];
 		$app_name2 = strtolower($app_name);
 		$db1 = \Config\Database::connect('addon');
-		$db1->query("DROP TABLE `$app_name`");
+		$db1->query("DROP TABLE `$app_name2`");
 		$db2 = \Config\Database::connect('default');
 		$builder = $db2->table('permission');
 		$builder->delete(['app' => $app_name]);
