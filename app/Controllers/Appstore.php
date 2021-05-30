@@ -26,11 +26,21 @@ class Appstore extends BaseController
 		$version = $_REQUEST['version'];
 		$type = $_REQUEST['type'];
 		$zip = new \ZipArchive;
-		$res = $zip->open("../public/Appstore/Official/$zip_name");
+		$root = constant("ROOTPATH");
+		if ($type == "OFFICIAL")
+		{
+		$dir = "public/Appstore/Official";
+		}
+		if ($type == "HOMEBREW")
+		{
+		$dir = "public/Appstore/Homebrew";
+		}
+		$dir = "$root$dir";
+		$res = $zip->open("$dir/$zip_name");
 		if ($res === TRUE) {
 
 			// Unzip path
-			$path = "../";
+			$path = "$root/";
 
 			// Extract file
 			$zip->extractTo($path);
@@ -42,6 +52,12 @@ class Appstore extends BaseController
 	}
 	public function remove()
 	{
+		$root = constant("ROOTPATH");
+
+		$database = "app/Database/Migrations/Addons/";
+		$views = "app/Views/Addons/";
+		$controllers = "app/Controllers/Addon_";
+		$models = "app/Models/Addon_";
 		$app_id = $_REQUEST['id'];
 		$app_name = $_REQUEST['app_name'];
 		$app_name2 = strtolower($app_name);
@@ -56,18 +72,24 @@ class Appstore extends BaseController
 		$migration = "App\Database\Migrations";
 		$builder->delete(['class' => "$migration\\$app_name"]);
 		$builder->delete(['class' => "$migration\\$app_name2"]);
-		array_map('unlink', glob("../app/Database/Migrations/Addons/$app_name/*.*"));
-		rmdir("../app/Database/Migrations/Addons/$app_name"); 
-		array_map('unlink', glob("../app/Views/Addons/$app_name/*.*"));
-		rmdir("../app/Views/Addons/$app_name");
-		unlink("../app/Controllers/Addon_$app_name.php");
-		unlink("../app/Models/Addon_$app_name.php");
+		array_map('unlink', glob("$root$database$app_name/*.*"));
+		rmdir("$root$database$app_name");
+		array_map('unlink', glob("$root$views$app_name/*.*"));
+		rmdir("$root$views$app_name");
+		unlink("$root$controllers$app_name.php");
+		unlink("$root$models$app_name.php");
 		$this->Appstore->remove($app_id);
 		$this->AppPage->remove($app_name);
 		return $this->index();
 	}
 	public function update()
 	{
+		$root = constant("ROOTPATH");
+
+		$database = "app/Database/Migrations/Addons/";
+		$views = "app/Views/Addons/";
+		$controllers = "app/Controllers/Addon_";
+		$models = "app/Models/Addon_";
 		// Suppression de La Version Actuel de L'Addon
 		$app_id = $_REQUEST['id'];
 		$app_name = $_REQUEST['app_name'];
@@ -82,25 +104,34 @@ class Appstore extends BaseController
 		$migration = "App\Database\Migrations";
 		$builder->delete(['class' => "$migration\\$app_name"]);
 		$builder->delete(['class' => "$migration\\$app_name2"]);
-		array_map('unlink', glob("../app/Database/Migrations/Addons/$app_name/*.*"));
-		rmdir("../app/Database/Migrations/Addons/$app_name"); 
-		array_map('unlink', glob("../app/Views/Addons/$app_name/*.*"));
-		rmdir("../app/Views/Addons/$app_name");
-		unlink("../app/Controllers/Addon_$app_name.php");
-		unlink("../app/Models/Addon_$app_name.php"); 
+		array_map('unlink', glob("$root$database$app_name/*.*"));
+		rmdir("$root$database$app_name");
+		array_map('unlink', glob("$root$views$app_name/*.*"));
+		rmdir("$root$views$app_name");
+		unlink("$root$controllers$app_name.php");
+		unlink("$root$models$app_name.php");
 		$this->Appstore->remove($app_id);
 		$this->AppPage->remove($app_name);
-		
+
 		$app_name = $_REQUEST['app_name'];
 		$zip_name = "$app_name.zip";
 		$version = $_REQUEST['version'];
 		$type = $_REQUEST['type'];
 		$zip = new \ZipArchive;
-		$res = $zip->open("../public/Appstore/Official/$zip_name");
+		if ($type == "OFFICIAL")
+		{
+		$dir = "public/Appstore/Official";
+		}
+		if ($type == "HOMEBREW")
+		{
+		$dir = "public/Appstore/Homebrew";
+		}
+		$dir = "$root$dir";
+		$res = $zip->open("$dir/$zip_name");
 		if ($res === TRUE) {
 
 			// Unzip path
-			$path = "../";
+			$path = "$root/";
 
 			// Extract file
 			$zip->extractTo($path);
