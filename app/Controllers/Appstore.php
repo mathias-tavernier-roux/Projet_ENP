@@ -140,5 +140,6 @@ class Appstore extends BaseController
 			command('migrate -g addon');
 			$this->Appstore->install($app_name, $zip_name, $version, $type);
 			return $this->index();
+		}
 	}
 }
