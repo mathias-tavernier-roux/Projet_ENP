@@ -90,16 +90,16 @@ class Appstore extends BaseController
 		$views = "app/Views/Addons/";
 		$controllers = "app/Controllers/Addon_";
 		$models = "app/Models/Addon_";
-		// Suppression de La Version Actuel de L'Addon
 		$app_id = $_REQUEST['id'];
 		$app_name = $_REQUEST['app_name'];
 		$app_name2 = strtolower($app_name);
 		$db1 = \Config\Database::connect('addon');
-		$db1->query("DROP TABLE `$app_name`");
+		$db1->query("DROP TABLE `$app_name2`");
 		$db2 = \Config\Database::connect('default');
 		$builder = $db2->table('permission');
 		$builder->delete(['app' => $app_name]);
-		$builder->delete(['app' => $app_name2]);
+		$builder = $db2->table('apppage');
+		$builder->delete(['app_name' => $app_name]);
 		$builder = $db2->table('migrations');
 		$migration = "App\Database\Migrations";
 		$builder->delete(['class' => "$migration\\$app_name"]);
@@ -118,6 +118,7 @@ class Appstore extends BaseController
 		$version = $_REQUEST['version'];
 		$type = $_REQUEST['type'];
 		$zip = new \ZipArchive;
+		$root = constant("ROOTPATH");
 		if ($type == "OFFICIAL")
 		{
 		$dir = "public/Appstore/Official";
@@ -139,6 +140,5 @@ class Appstore extends BaseController
 			command('migrate -g addon');
 			$this->Appstore->install($app_name, $zip_name, $version, $type);
 			return $this->index();
-		}
 	}
 }
