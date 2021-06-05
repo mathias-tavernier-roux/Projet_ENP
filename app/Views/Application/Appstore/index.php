@@ -101,6 +101,7 @@
                                             } else {
                                             ?>
                                                 <td></td>
+                                                <td></td>
                                                 <td><?= $version ?></td>
                             <?php
                                             }
