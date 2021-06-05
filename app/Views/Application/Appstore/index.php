@@ -16,7 +16,6 @@
                             <th>Nom du Fichier Concerné</th>
                             <th>Action</th>
                             <th></th>
-                            <th></th>
                             <th>Version</th>
                         </tr>
                     </thead>
@@ -55,7 +54,6 @@
                                                 </form>
                                             </td>
                                             <td></td>
-                                            <td></td>
                                             <td><?= $version ?></td>
                                         <?php
                                         } else {
@@ -86,22 +84,10 @@
                                                             <button class="btn btn-primary" type="submit">Mise a Jour</button>
                                                         </form>
                                                     </td>
-                                                    <td>
-                                                        <form method=POST action=/Appstore/update_dbu>
-                                                        <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
-                                                        <input type="hidden" id="zip_name" name="zip_name" value="<?= $file_info->getBasename('') ?>">
-                                                        <input type="hidden" id="version" name="version" value="<?= $version ?>">
-                                                        <input type="hidden" id="type" name="type" value="HOMEBREW">
-                                                        <input type="hidden" id="DBU" name="DBU" value="DBU">
-                                                            <input type="hidden" id="id" name="id" value="<?=$app_id?>">
-                                                            <button class="btn btn-primary" type="submit">Mise a Jour DBU</button>
-                                                        </form>
-                                                    </td>
                                                     <td><?= $version ?></td>
                                             <?php
                                             } else {
                                             ?>
-                                                <td></td>
                                                 <td></td>
                                                 <td><?= $version ?></td>
                             <?php
@@ -135,7 +121,6 @@
                             <th>Nom de L'Addon</th>
                             <th>Nom du Fichier Concerné</th>
                             <th>Action</th>
-                            <th></th>
                             <th></th>
                             <th>Version</th>
                         </tr>
@@ -175,7 +160,6 @@
                                                 </form>
                                             </td>
                                             <td></td>
-                                            <td></td>
                                             <td><?= $version ?></td>
                                         <?php
                                         } else {
@@ -204,16 +188,6 @@
                                                     <input type="hidden" id="type" name="type" value="HOMEBREW">
                                                         <input type="hidden" id="id" name="id" value="<?=$app_id?>">
                                                         <button class="btn btn-primary" type="submit">Mise a Jour</button>
-                                                    </form>
-                                                </td>
-                                                <td>
-                                                    <form method=POST action=/Appstore/update_dbu>
-                                                    <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
-                                                    <input type="hidden" id="zip_name" name="zip_name" value="<?= $file_info->getBasename('') ?>">
-                                                    <input type="hidden" id="version" name="version" value="<?= $version ?>">
-                                                    <input type="hidden" id="type" name="type" value="HOMEBREW">
-                                                        <input type="hidden" id="id" name="id" value="<?=$app_id?>">
-                                                        <button class="btn btn-primary" type="submit">Mise a Jour DBU</button>
                                                     </form>
                                                 </td>
                                                 <td><?= $version ?></td>
