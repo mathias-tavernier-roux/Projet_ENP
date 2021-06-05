@@ -14,9 +14,11 @@ class Appstore extends BaseController
 		$app = "Appstore";
 		$page = "index";
 		$titre = "App Store";
+		$system_info = $this->System->info();
+		$core_status = $system_info["unlock"];
 		$list_official = $this->Appstore->list_official();
 		$list_homebrew = $this->Appstore->list_homebrew();
-		return view('Application/Appstore/index', ['app' => $app, 'page' => $page, 'titre' => $titre, 'list_official' => $list_official, 'list_homebrew' => $list_homebrew]);
+		return view('Application/Appstore/index', ['app' => $app, 'page' => $page, 'titre' => $titre, 'core_status' => $core_status, 'list_official' => $list_official, 'list_homebrew' => $list_homebrew]);
 	}
 
 	public function install()
