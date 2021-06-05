@@ -88,7 +88,6 @@ class Appstore extends BaseController
 	public function update()
 	{
 		$root = constant("ROOTPATH");
-
 		$database = "app/Database/Migrations/Addons/";
 		$views = "app/Views/Addons/";
 		$controllers = "app/Controllers/Addon_";
@@ -115,7 +114,6 @@ class Appstore extends BaseController
 		unlink("$root$models$app_name.php");
 		$this->Appstore->remove($app_id);
 		$this->AppPage->remove($app_name);
-
 		$app_name = $_REQUEST['app_name'];
 		$zip_name = "$app_name.zip";
 		$version = $_REQUEST['version'];
