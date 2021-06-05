@@ -16,7 +16,7 @@
                             <th>Nom du Fichier Concerné</th>
                             <th>Action</th>
                             <th></th>
-                            <th>Version</th>
+                            <th>MD5</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -73,18 +73,18 @@
                                             </td>
                                             <?php
                                             if ($app_version != $version) {
-                                                ?>
-                                                    <td>
-                                                        <form method=POST action=/Appstore/update>
-                                                        <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
-                                                        <input type="hidden" id="zip_name" name="zip_name" value="<?= $file_info->getBasename('') ?>">
-                                                        <input type="hidden" id="version" name="version" value="<?= $version ?>">
-                                                        <input type="hidden" id="type" name="type" value="HOMEBREW">
-                                                            <input type="hidden" id="id" name="id" value="<?=$app_id?>">
-                                                            <button class="btn btn-primary" type="submit">Mise a Jour</button>
-                                                        </form>
-                                                    </td>
-                                                    <td><?= $version ?></td>
+                                            ?>
+                                                <td>
+                                                    <form method=POST action=/Appstore/update>
+                                                    <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
+                                                    <input type="hidden" id="zip_name" name="zip_name" value="<?= $file_info->getBasename('') ?>">
+                                                    <input type="hidden" id="version" name="version" value="<?= $version ?>">
+                                                    <input type="hidden" id="type" name="type" value="OFFICIAL">
+                                                        <input type="hidden" id="id" name="id" value="<?=$app_id?>">
+                                                        <button class="btn btn-primary" type="submit">Mettre a Jour</button>
+                                                    </form>
+                                                </td>
+                                                <td><?= $version ?></td>
                                             <?php
                                             } else {
                                             ?>
@@ -103,6 +103,11 @@
                     </tfoot>
                 </table>
             </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Applications Disponible :&nbsp; 1</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="card shadow">
@@ -110,22 +115,22 @@
             <p class="text-primary m-0 fw-bold">Application Provenant de Sources Inconnus (Voir Manuel de L'Application : Sources Inconnus)</p>
         </div>
         <?php
+        $core_status = 1;
         if ($core_status == 1) {
         ?>
             <!----CAS 1 Coeur Déverouillé --->
             <div class="card-body">
-            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                <table class="table my-0" id="dataTable">
-                    <thead>
-                        <tr>
-                            <th>Nom de L'Addon</th>
-                            <th>Nom du Fichier Concerné</th>
-                            <th>Action</th>
-                            <th></th>
-                            <th>Version</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+                    <table class="table my-0" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Nom de L'Addon</th>
+                                <th>Nom du Fichier Concerné</th>
+                                <th>Action</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
                         <?php
                         // Module de Recherche
                         $root = constant("ROOTPATH");
@@ -142,7 +147,7 @@
                                     $app_name = $file_info->getBasename('.zip');
                                     $zip_name = $file_info->getBasename('');
                                     $version = md5_file("$dir/$app");
-                                    $type = "HOMEBREW";
+                                    $type = "OFFICIAL";
                         ?>
                                     <tr>
                                         <td><?= $file_info->getBasename('.zip') ?></td>
@@ -172,8 +177,8 @@
                                         ?>
                                             <td>
                                                 <form method=POST action=/Appstore/remove>
-                                                    <input type="hidden" id="id" name="id" value="<?=$app_id?>">
                                                     <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
+                                                    <input type="hidden" id="id" name="id" value="<?=$app_id?>">
                                                     <button class="btn btn-primary" type="submit">Supprimer</button>
                                                 </form>
                                             </td>
@@ -182,12 +187,9 @@
                                             ?>
                                                 <td>
                                                     <form method=POST action=/Appstore/update>
-                                                    <input type="hidden" id="app_name" name="app_name" value="<?= $file_info->getBasename('.zip') ?>">
-                                                    <input type="hidden" id="zip_name" name="zip_name" value="<?= $file_info->getBasename('') ?>">
-                                                    <input type="hidden" id="version" name="version" value="<?= $version ?>">
-                                                    <input type="hidden" id="type" name="type" value="HOMEBREW">
+                                                        <input type="hidden" id="version" name="version" value="<?= $version ?>">
                                                         <input type="hidden" id="id" name="id" value="<?=$app_id?>">
-                                                        <button class="btn btn-primary" type="submit">Mise a Jour</button>
+                                                        <button class="btn btn-primary" type="submit">Mettre a Jour</button>
                                                     </form>
                                                 </td>
                                                 <td><?= $version ?></td>
@@ -204,10 +206,16 @@
                             }
                             ?>
                     </tbody>
-                    <tfoot>
-                        <tr></tr>
-                    </tfoot>
-                </table>
+                        <tfoot>
+                            <tr></tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Applications Disponible :&nbsp; 1</p>
+                    </div>
+                </div>
             </div>
         <?php
         } else {

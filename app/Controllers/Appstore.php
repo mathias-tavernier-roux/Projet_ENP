@@ -8,18 +8,15 @@ class Appstore extends BaseController
 	{
 		$this->Appstore = model('App\Models\AppstoreModel', false);
 		$this->AppPage = model('App\Models\AppPageModel', false);
-		$this->System = model('App\Models\SystemModel', false);
 	}
 	public function index()
 	{
 		$app = "Appstore";
 		$page = "index";
 		$titre = "App Store";
-		$system_info = $this->System->info();
-		$core_status = $system_info["unlock"];
 		$list_official = $this->Appstore->list_official();
 		$list_homebrew = $this->Appstore->list_homebrew();
-		return view('Application/Appstore/index', ['app' => $app, 'page' => $page, 'titre' => $titre, 'core_status' => $core_status, 'list_official' => $list_official, 'list_homebrew' => $list_homebrew]);
+		return view('Application/Appstore/index', ['app' => $app, 'page' => $page, 'titre' => $titre, 'list_official' => $list_official, 'list_homebrew' => $list_homebrew]);
 	}
 
 	public function install()
@@ -88,20 +85,21 @@ class Appstore extends BaseController
 	public function update()
 	{
 		$root = constant("ROOTPATH");
+
 		$database = "app/Database/Migrations/Addons/";
 		$views = "app/Views/Addons/";
 		$controllers = "app/Controllers/Addon_";
 		$models = "app/Models/Addon_";
+		// Suppression de La Version Actuel de L'Addon
 		$app_id = $_REQUEST['id'];
 		$app_name = $_REQUEST['app_name'];
 		$app_name2 = strtolower($app_name);
 		$db1 = \Config\Database::connect('addon');
-		$db1->query("DROP TABLE `$app_name2`");
+		$db1->query("DROP TABLE `$app_name`");
 		$db2 = \Config\Database::connect('default');
 		$builder = $db2->table('permission');
 		$builder->delete(['app' => $app_name]);
-		$builder = $db2->table('apppage');
-		$builder->delete(['app_name' => $app_name]);
+		$builder->delete(['app' => $app_name2]);
 		$builder = $db2->table('migrations');
 		$migration = "App\Database\Migrations";
 		$builder->delete(['class' => "$migration\\$app_name"]);
@@ -114,12 +112,12 @@ class Appstore extends BaseController
 		unlink("$root$models$app_name.php");
 		$this->Appstore->remove($app_id);
 		$this->AppPage->remove($app_name);
+
 		$app_name = $_REQUEST['app_name'];
 		$zip_name = "$app_name.zip";
 		$version = $_REQUEST['version'];
 		$type = $_REQUEST['type'];
 		$zip = new \ZipArchive;
-		$root = constant("ROOTPATH");
 		if ($type == "OFFICIAL")
 		{
 		$dir = "public/Appstore/Official";

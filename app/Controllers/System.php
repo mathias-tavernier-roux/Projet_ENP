@@ -74,4 +74,40 @@ class System extends BaseController
 		$this->System->unlock();
 		return $this->index();
 	}
+    // Addons Scripts
+    public function appstore()
+	{
+		$app = "System";
+		$page = "appstore";
+		$titre = "App Store";
+		return view('Application/System/appstore' , ['app' => $app, 'page' => $page, 'titre'=>$titre]);
+	}
+	public function app_view()
+	{
+		$app = "System";
+		$page = "app_view";
+		$addon_name = "blank_addon.zip";
+		$titre = "Addon Package : $addon_name";
+		return view('Application/System/appstore_view' , ['app' => $app, 'page' => $page, 'titre'=>$titre]);
+	}
+    public function addon_install()
+	{
+		return view('Application/System/addons_install');
+	}
+	public function update_name()
+	{
+		$actual_data = $this->System->first();
+		$big_name = $_REQUEST['new_name'];
+		if ($big_name == NULL)
+		{
+			$big_name = $actual_data['complete_name'];
+		}
+		$little_name = $_REQUEST['new_mini_name'];
+		if ($little_name == NULL)
+		{
+			$little_name = $actual_data['little_name'];
+		}
+		$this->System->update_data($big_name, $little_name);
+		return $this->index();
+	}
 }
