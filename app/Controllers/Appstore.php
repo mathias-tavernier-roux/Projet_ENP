@@ -8,6 +8,7 @@ class Appstore extends BaseController
 	{
 		$this->Appstore = model('App\Models\AppstoreModel', false);
 		$this->AppPage = model('App\Models\AppPageModel', false);
+		$this->System = model('App\Models\SystemModel', false);
 	}
 	public function index()
 	{
